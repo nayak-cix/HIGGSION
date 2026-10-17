@@ -272,6 +272,9 @@
         <!-- ============================================================
              SECTION: NEURAL SIGNAL TRANSLATION & SPEECH VECTORS (TABBED CAPSULES)
              ============================================================ -->
+                <!-- ============================================================
+             SECTION 2: NEURAL SIGNAL TRANSLATION & SPEECH VECTORS
+             ============================================================ -->
         <section class="section vectors-tab-showcase" id="vectors-part-1">
             <div class="container">
 
@@ -286,137 +289,147 @@
                 <!-- 5 Glassmorphic Capsule Tabs (#D2C3E1 Active / Glass Inactive) -->
                 <div class="capsule-tabs-container">
                     <button class="capsule-tab-btn active" data-tab="phonetic">Phonetic Decoding</button>
-                    <button class="capsule-tab-btn" data-tab="speech-imagery">Speech Imagery</button>
-                    <button class="capsule-tab-btn" data-tab="motor-intent">Motor Intent</button>
-                    <button class="capsule-tab-btn" data-tab="cortical-mapping">Cortical Mapping</button>
-                    <button class="capsule-tab-btn" data-tab="synchronization">Signal Synchronization</button>
+                    <button class="capsule-tab-btn" data-tab="imagery">Speech Imagery</button>
+                    <button class="capsule-tab-btn" data-tab="motor">Motor Intent</button>
+                    <button class="capsule-tab-btn" data-tab="cortical">Cortical Mapping</button>
+                    <button class="capsule-tab-btn" data-tab="sync">Signal Synchronization</button>
                 </div>
 
                 <!-- Tab 1: Phonetic Decoding -->
                 <div class="tab-editorial-view active" id="tab-phonetic">
                     <div class="editorial-col-narrative">
                         <p class="narrative-lead">
-                            Decoding internally generated articulatory representations without physical vocal cord actuation forms the core investigational pathway of the BrainWave research initiative. By projecting multichannel scalp potentials into calibrated phonetic probability distributions, we analyze how distinct phonemic categories register across cortical topography.
+                            Differentiating discrete phonemic tokens from non-invasive scalp EEG constitutes a fundamental electrophysiological challenge due to severe volume conduction, low signal-to-noise ratio, and the spatial smearing of fine-grained cortical activations across the scalp.
                         </p>
                         <p class="narrative-body">
-                            Our experimental paradigms pair covert phonemic rehearsals with precise visual triggers, allowing acoustic-phonetic feature representations to be trained against time-synchronized EEG windows. The objective is to identify robust spectral and spatial markers that remain consistent across trials while suppressing physiological artifacts.
+                            BrainWave’s research pipeline investigates spatiotemporal filtering architectures designed to isolate transient spectral perturbations and cross-channel phase shifts associated with covert articulatory targets. Rather than attempting unconstrained vocabulary reconstruction, the computational focus centers on multi-class classification across predefined phonetic contrast sets (e.g., vowels versus consonants, distinctive place-of-articulation features).
                         </p>
                         <p class="narrative-body">
-                            Rather than assuming unrestrained lexical reconstruction, current modeling isolates discrete phonetic boundary transitions, evaluating cross-entropy classification baselines against structured phoneme matrices.
+                            The proposed translational contribution explores whether bounded acoustic or phonological representations can serve as robust inputs for communication decoders in patients with severe expressive dysarthria or anarthria. Performance must be rigorously validated through partition-isolated test sets, empirical chance-level distributions, and systematic controls to confirm that classification is not mediated by residual facial or glossokinetic electromyographic (EMG) artifacts.
                         </p>
                     </div>
-
                     <div class="editorial-col-preview">
                         <div class="preview-specimen-frame">
-                            <img src="assets/brain11.jpg" alt="Cortical phoneme mapping" class="preview-stage-img">
+                            <img src="assets/brain0.jpg" alt="Phonetic Decoding Dynamics" class="preview-stage-img">
                         </div>
                         <div class="preview-meta-panel">
-                            <span class="preview-meta-title">INVESTIGATIVE REGIONS</span>
+                            <span class="preview-meta-title">INVESTIGATIVE TARGETS</span>
                             <ul class="preview-links-list">
-                                <li><span>Superior Temporal Gyrus (STG)</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Premotor Cortex (PMC)</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Broca's Area (IFG)</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Primary Motor Strip (M1)</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Phonemic Contrast Matrices</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Covert Articulatory Bounds</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>EMG Artifact Screening</span><span class="ext-arrow">&#8599;</span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <!-- Tab 2: Speech Imagery -->
-                <div class="tab-editorial-view" id="tab-speech-imagery">
+                <div class="tab-editorial-view" id="tab-imagery">
                     <div class="editorial-col-narrative">
                         <p class="narrative-lead">
-                            Speech imagery investigations focus on the silent internal generation of words and phrases without overt muscle activation. Isolating these sub-microvolt potentials requires identifying the electrophysiological signatures of linguistic intent.
+                            Imagined speech paradigms lack peripheral kinematics or acoustic feedback, introducing severe variability stemming from cognitive fatigue, internal pacing discrepancies, and involuntary transitions into whispered rehearsal or passive inner speech.
                         </p>
                         <p class="narrative-body">
-                            Controlled trials evaluate event-related synchronization and desynchronization (ERS/ERD) patterns across sensorimotor electrodes, separating cognitive speech preparation from peripheral artifact interference.
+                            The acquisition protocol addresses this by enforcing structured visual cueing sequences with strict baseline, prompt, mental rehearsal, and rest windows. The signal-processing stage investigates event-related desynchronization and synchronization (ERD/ERS) in sensorimotor mu (8–12 Hz) and beta (13–30 Hz) bands, paired with time-frequency feature extraction time-locked to the execution interval.
+                        </p>
+                        <p class="narrative-body">
+                            This paradigm provides the foundational cognitive substrate for non-invasive neuro-assistive spellers intended for individuals with locked-in syndrome. Empirical validation requires testing across longitudinal sessions, quantifying the impact of attention lapses, and documenting class-balanced separability under rigorous offline and pseudo-online evaluation regimens.
                         </p>
                     </div>
                     <div class="editorial-col-preview">
                         <div class="preview-specimen-frame">
-                            <img src="assets/brain11.jpg" alt="Speech Imagery Dynamics" class="preview-stage-img">
+                            <img src="assets/brain0.jpg" alt="Speech Imagery Protocols" class="preview-stage-img">
                         </div>
                         <div class="preview-meta-panel">
-                            <span class="preview-meta-title">INVESTIGATIVE REGIONS</span>
+                            <span class="preview-meta-title">INVESTIGATIVE TARGETS</span>
                             <ul class="preview-links-list">
-                                <li><span>Inferior Frontal Gyrus</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Supplementary Motor Area (SMA)</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Left Rolandic Cortex</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Sensorimotor Mu/Beta ERD</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Paced Rehearsal Windows</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Cross-Session Stability</span><span class="ext-arrow">&#8599;</span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <!-- Tab 3: Motor Intent -->
-                <div class="tab-editorial-view" id="tab-motor-intent">
+                <div class="tab-editorial-view" id="tab-motor">
                     <div class="editorial-col-narrative">
                         <p class="narrative-lead">
-                            Decoding motor intentions examines the neural planning stages preceding articulatory or assistive physical actions. Models evaluate preparatory slow cortical potentials and mu/beta rhythm fluctuations.
+                            Isolating preparatory motor intent for speech production from broader somatic motor imagery (such as hand or limb motor planning) is constrained by overlapping sensorimotor cortical representations and non-specific attentional surges.
                         </p>
                         <p class="narrative-body">
-                            These investigations establish baseline decoding benchmarks for assistive human–computer control architectures, emphasizing low-latency command activation and minimal false-positive rates.
+                            BrainWave’s research framework evaluates localized spatial derivations—including surface Laplacian operators and bipolar frontocentral configurations—to distinguish focal pre-activation dynamics over ventral sensorimotor cortex from generalized motor readiness potentials (Bereitschaftspotential).
+                        </p>
+                        <p class="narrative-body">
+                            For assistive interfaces, reliable detection of intent initiation offers an asynchronous gating mechanism that prevents false activations during idle cognitive states. Evaluating this processing stage requires quantifying false-positive activation rates per unit time during resting baselines, receiver operating characteristic (ROC) curves, and discriminant separation against non-articulatory motor imagery.
                         </p>
                     </div>
                     <div class="editorial-col-preview">
                         <div class="preview-specimen-frame">
-                            <img src="assets/brain11.jpg" alt="Motor Planning Potentials" class="preview-stage-img">
+                            <img src="assets/brain0.jpg" alt="Motor Intent Gating" class="preview-stage-img">
                         </div>
                         <div class="preview-meta-panel">
-                            <span class="preview-meta-title">INVESTIGATIVE REGIONS</span>
+                            <span class="preview-meta-title">INVESTIGATIVE TARGETS</span>
                             <ul class="preview-links-list">
-                                <li><span>Brodmann Area 4 (M1)</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Posterior Parietal Cortex</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Dorsolateral Prefrontal Cortex</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Ventral Sensorimotor Gating</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Laplacian Spatial Derivations</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Rest-State False-Positive Rate</span><span class="ext-arrow">&#8599;</span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <!-- Tab 4: Cortical Mapping -->
-                <div class="tab-editorial-view" id="tab-cortical-mapping">
+                <div class="tab-editorial-view" id="tab-cortical">
                     <div class="editorial-col-narrative">
                         <p class="narrative-lead">
-                            High-density spatial mapping investigates the topological projection of scalp electrode montages to underlying cortical coordinate systems using 10–20 standard positioning.
+                            Inferring localized cortical generators from multichannel scalp potentials is intrinsically ill-posed, as heterogeneous cranial conductivity and dipolar cancellations blur the boundaries between Broca's area, Wernicke's area, and primary motor regions.
                         </p>
                         <p class="narrative-body">
-                            Surface Laplacian transformations and forward modeling techniques are explored to improve spatial resolution and isolate focal sources of speech-related electrophysiological rhythms.
+                            The research framework explores topographic electrode montage optimizations and cross-channel coherence metrics to evaluate functional connectivity patterns across frontotemporal and centro-parietal recording sites under non-invasive 10–20 array configurations.
+                        </p>
+                        <p class="narrative-body">
+                            Understanding channel-level relevance guides the engineering of lightweight, ergonomically feasible electrode layouts suited for patient bedsides. Methodological validity requires channel-drop ablation studies, cross-participant spatial consistency analyses, and verification that learned feature topographies align with established neurofunctional speech networks rather than localized electrode impedance artifacts.
                         </p>
                     </div>
                     <div class="editorial-col-preview">
                         <div class="preview-specimen-frame">
-                            <img src="assets/brain11.jpg" alt="Cortical Mapping Spatial Projection" class="preview-stage-img">
+                            <img src="assets/brain0.jpg" alt="Cortical Mapping Topographies" class="preview-stage-img">
                         </div>
                         <div class="preview-meta-panel">
-                            <span class="preview-meta-title">INVESTIGATIVE REGIONS</span>
+                            <span class="preview-meta-title">INVESTIGATIVE TARGETS</span>
                             <ul class="preview-links-list">
-                                <li><span>Electrode Montages C3/C4 &amp; FC5/FC6</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Temporal Lobes (T7/T8)</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Parieto-Occipital Boundaries</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Topographic Channel Contributions</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Cross-Electrode Coherence</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Channel-Drop Ablation Curves</span><span class="ext-arrow">&#8599;</span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <!-- Tab 5: Signal Synchronization -->
-                <div class="tab-editorial-view" id="tab-synchronization">
+                <div class="tab-editorial-view" id="tab-sync">
                     <div class="editorial-col-narrative">
                         <p class="narrative-lead">
-                            Sub-millisecond data synchronization aligns multichannel EEG continuous streams with experimental trigger markers, audio cues, and stimulus display refresh events.
+                            Scalp electrophysiology decoding is highly vulnerable to millisecond timing jitter, digital bus transmission latency, and clock drift between visual presentation engines and analog front-end sampling clocks.
                         </p>
                         <p class="narrative-body">
-                            Utilizing protocol timestamps and jitter-corrected network streams, this layer ensures that spatiotemporal representations are trained exclusively on precisely phased neural epochs.
+                            BrainWave investigates hardware-level trigger integration and deterministic timestamp alignment protocols to ensure sub-millisecond event-marker synchronization between experimental visual stimuli and digitized electrophysiological data streams.
+                        </p>
+                        <p class="narrative-body">
+                            Phase-locked trial synchronization is indispensable for accurate phase-locking value (PLV) extraction and event-related potential (ERP) analysis, particularly when designing closed-loop neurorehabilitation protocols. Performance must be benchmarked using external oscilloscope and signal-generator calibration, characterizing jitter distribution bounds across multi-hour experimental runs.
                         </p>
                     </div>
                     <div class="editorial-col-preview">
                         <div class="preview-specimen-frame">
-                            <img src="assets/brain11.jpg" alt="Signal Synchronization & LSL Stream" class="preview-stage-img">
+                            <img src="assets/brain0.jpg" alt="Signal Synchronization & Latency" class="preview-stage-img">
                         </div>
                         <div class="preview-meta-panel">
-                            <span class="preview-meta-title">INVESTIGATIVE REGIONS</span>
+                            <span class="preview-meta-title">INVESTIGATIVE TARGETS</span>
                             <ul class="preview-links-list">
-                                <li><span>Hardware Clock Synchronizer</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Event-Marker Ingestion</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>BIDS Time-Alignment</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Sub-Millisecond Timestamp Jitter</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Hardware Trigger Synchronization</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Phase-Locking Stability</span><span class="ext-arrow">&#8599;</span></li>
                             </ul>
                         </div>
                     </div>
@@ -433,6 +446,9 @@
              ============================================================ -->
         <!-- ============================================================
              SECTION: DIAGNOSTICS, REHABILITATION & CONTROL (REVERSED STAGE)
+             ============================================================ -->
+                <!-- ============================================================
+             SECTION 3: DIAGNOSTICS, REHABILITATION & CONTROL
              ============================================================ -->
         <section class="section vectors-tab-showcase" id="vectors-part-2">
             <div class="container">
@@ -464,9 +480,9 @@
                         <div class="preview-meta-panel">
                             <span class="preview-meta-title">INVESTIGATIVE TARGETS</span>
                             <ul class="preview-links-list">
-                                <li><span>Primary Motor Strip (M1)</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Supplementary Motor Area</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Sensory Feedback Loops</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Sensorimotor Mu/Beta Desynchronization</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Closed-Loop Contingency Latencies</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Paired Associative Plasticity Models</span><span class="ext-arrow">&#8599;</span></li>
                             </ul>
                         </div>
                     </div>
@@ -474,19 +490,20 @@
                     <!-- Right Column: Narrative Content -->
                     <div class="editorial-col-narrative">
                         <p class="narrative-lead">
-                            Closed-loop neurorehabilitation protocols explore paired electrophysiological feedback with motor imagery rehearsal to promote neuroplasticity following upper-limb motor deficits.
+                            Upper motor neuron damage leaves individuals unable to execute voluntary movements, preventing active engagement in traditional physical therapy and depriving the central nervous system of functional sensorimotor feedback required to drive motor recovery.
                         </p>
                         <p class="narrative-body">
-                            By pairing real-time mu and beta desynchronization metrics with intuitive digital interfaces, the platform facilitates repeated sensorimotor loop activation within controlled experimental settings.
+                            BrainWave’s research pipeline investigates closed-loop sensorimotor rhythm (SMR) neurofeedback. During covert motor imagery rehearsal, acquisition front-ends monitor event-related desynchronization (ERD) in sensorimotor mu (8–12 Hz) and beta (13–30 Hz) bands over primary motor (M1) and supplementary motor areas, transforming localized rhythm modulation into contingent auditory, visual, or orthotic feedback.
                         </p>
                         <p class="narrative-body">
-                            The research framework prioritizes task engagement verification, objective signal reliability, and standardized clinical benchmark integration.
+                            Causal spatial filters and automated ocular artifact suppression isolate focal sensorimotor dynamics from facial electromyographic (EMG) cross-talk. If validated, this contingency loop could provide a non-invasive bridge to re-engage motor circuits in severe paresis. However, scalp-recorded motor intent reflects cortical preparatory states rather than peripheral muscle activation or guaranteed biomechanical execution. Demonstrating restorative efficacy requires controlled clinical trials benchmarking against sham-feedback conditions and measuring validated clinical outcomes (such as the Fugl-Meyer Assessment) alongside electrophysiological markers of cortical reorganization.
                         </p>
                     </div>
                 </div>
 
                 <!-- Tab 2: Post-Stroke Plasticity -->
                 <div class="tab-editorial-view tab-editorial-view-reversed" id="tab-diag-stroke">
+                    <!-- Left Column: Image Preview & Regions List -->
                     <div class="editorial-col-preview">
                         <div class="preview-specimen-frame">
                             <img src="assets/brain11.jpg" alt="Post-Stroke Cortical Plasticity" class="preview-stage-img">
@@ -494,25 +511,30 @@
                         <div class="preview-meta-panel">
                             <span class="preview-meta-title">INVESTIGATIVE TARGETS</span>
                             <ul class="preview-links-list">
-                                <li><span>Perilesional Cortex</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Contralesional Motor Compensations</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Theta/Beta Power Ratios</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Inter-Hemispheric Coherence Metrics</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Perilesional Spectral Reorganization</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Multimodal Imaging Correlation</span><span class="ext-arrow">&#8599;</span></li>
                             </ul>
                         </div>
                     </div>
 
+                    <!-- Right Column: Narrative Content -->
                     <div class="editorial-col-narrative">
                         <p class="narrative-lead">
-                            Investigating bilateral sensorimotor dynamics to assess cortical reorganization and recovery trajectories across post-acute ischemic stroke cohorts.
+                            Focal ischemic or hemorrhagic stroke alters bilateral network dynamics, frequently inducing pathological inter-hemispheric imbalance where the uninjured hemisphere exerts maladaptive transcallosal inhibition over perilesional motor networks.
                         </p>
                         <p class="narrative-body">
-                            Electrophysiological tracking monitors intra-hemispheric coherence and frequency shifts to evaluate functional recovery markers alongside conventional physical therapy.
+                            The proposed research protocol evaluates longitudinal multichannel EEG telemetry to quantify electrophysiological markers of recovery, tracking spectral power ratios (such as theta/beta and delta/alpha ratios) and cross-hemispheric functional coherence across structured post-acute recording intervals.
+                        </p>
+                        <p class="narrative-body">
+                            Automated impedance monitoring and causal channel rejection isolate authentic cortical rhythms from skull defect artifacts and compensatory cranial muscle tension. While these metrics may offer objective prognostic indicators to optimize rehabilitation timing, scalp EEG captures macroscopic volume-conducted potentials and cannot resolve cellular repair processes. Observed shifts in spectral connectivity must be systematically distinguished from behavioral compensatory strategies through longitudinal studies correlated with diffusion-weighted MRI tractography and standardized neurofunctional assessments.
                         </p>
                     </div>
                 </div>
 
                 <!-- Tab 3: ALS Assistive Speller -->
                 <div class="tab-editorial-view tab-editorial-view-reversed" id="tab-diag-als">
+                    <!-- Left Column: Image Preview & Regions List -->
                     <div class="editorial-col-preview">
                         <div class="preview-specimen-frame">
                             <img src="assets/brain11.jpg" alt="ALS Assistive Communication" class="preview-stage-img">
@@ -520,25 +542,30 @@
                         <div class="preview-meta-panel">
                             <span class="preview-meta-title">INVESTIGATIVE TARGETS</span>
                             <ul class="preview-links-list">
-                                <li><span>P300 Event-Related Potentials</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Visual &amp; Covert Cues</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Character Selection Logits</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>P300 Oddball Evoked Potentials</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Sub-Millisecond Flash Latency Locking</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Confidence-Gated Keystroke Logic</span><span class="ext-arrow">&#8599;</span></li>
                             </ul>
                         </div>
                     </div>
 
+                    <!-- Right Column: Narrative Content -->
                     <div class="editorial-col-narrative">
                         <p class="narrative-lead">
-                            Developing non-invasive speller interfaces tailored for individuals experiencing progressive loss of voluntary motor function due to amyotrophic lateral sclerosis.
+                            Amyotrophic lateral sclerosis (ALS) progressively degrades upper and lower motor neurons, systematically removing verbal communication and voluntary motor pathways while sensory, perceptual, and cognitive faculties often remain functionally intact.
                         </p>
                         <p class="narrative-body">
-                            Research focuses on high-precision event-related potential extraction and confidence-thresholded selection logic to prevent fatigue and minimize unintended keystrokes.
+                            BrainWave investigates event-related potential (ERP) spellers, primarily utilizing visual P300 oddball paradigms, as an established non-invasive assistive communication avenue. Flashed matrix stimuli elicit transient positive deflections approximately 300 ms post-stimulus when a user attends to target characters.
+                        </p>
+                        <p class="narrative-body">
+                            Deterministic hardware triggers register presentation timing down to sub-millisecond precision, allowing regularized linear decoders to separate target ERP waveforms from ongoing spontaneous EEG while confidence-thresholded gating minimizes unintended character entries. Crucially, visual P300 spelling relies on sensory evoked potentials and oddball attention mechanisms; it represents a distinct operational paradigm and provides no evidence regarding the feasibility of imagined-speech decoding. Clinical translation requires multi-session evaluations with ALS participants, quantifying sustainable information transfer rate (bits/minute), keystroke error rates, and user fatigue under real-world bedside constraints.
                         </p>
                     </div>
                 </div>
 
                 <!-- Tab 4: Prosthetic Actuation -->
                 <div class="tab-editorial-view tab-editorial-view-reversed" id="tab-diag-prosthetics">
+                    <!-- Left Column: Image Preview & Regions List -->
                     <div class="editorial-col-preview">
                         <div class="preview-specimen-frame">
                             <img src="assets/brain11.jpg" alt="Prosthetic Actuation & Assistive Control" class="preview-stage-img">
@@ -546,25 +573,30 @@
                         <div class="preview-meta-panel">
                             <span class="preview-meta-title">INVESTIGATIVE TARGETS</span>
                             <ul class="preview-links-list">
-                                <li><span>Direct Actuation Endpoints</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Kinematic Intent Extraction</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Safety Failsafe Logic</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Movement-Related Cortical Potentials</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Surface Laplacian Intent Gating</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Idle-State False-Positive Bounds</span><span class="ext-arrow">&#8599;</span></li>
                             </ul>
                         </div>
                     </div>
 
+                    <!-- Right Column: Narrative Content -->
                     <div class="editorial-col-narrative">
                         <p class="narrative-lead">
-                            Translating discrete cortical intent states into bounded robotic control commands for assistive splints, wheelchairs, and external computing peripherals.
+                            Translating volitional motor intent into mechanical actuation without implanted intracortical microelectrodes is hindered by the low spatial resolution and non-stationarity of scalp potentials, creating severe risks of erroneous device activation.
                         </p>
                         <p class="narrative-body">
-                            Emphasis is placed on real-time rejection of spurious activations, multi-stage confirmation gates, and predictable low-latency command routing.
+                            The research framework evaluates non-invasive intent gating to trigger bounded, discrete assistive device operations (such as power-grasp orthoses or robotic mobility controllers). Signal processing stages detect slow movement-related cortical potentials (MRCPs) and post-movement beta rebounds, applying spatial Laplacian filters to isolate focal motor readiness.
+                        </p>
+                        <p class="narrative-body">
+                            To protect against spurious triggers during unconstrained conversational or resting states, the decoding architecture implements high-confidence threshold gates and refractory lockout intervals. However, scalp EEG captures macroscopic cortical readiness and cannot decode continuous multi-joint kinematics or replace the fine proportional control offered by native musculature. Establishing feasibility requires quantifying false-positive activation rates per idle hour, measuring intent-to-actuation latencies, and demonstrating fail-safe safety protocols on physical test rigs prior to any wearable or clinical deployment.
                         </p>
                     </div>
                 </div>
 
                 <!-- Tab 5: Continuous Neuro-Monitoring -->
                 <div class="tab-editorial-view tab-editorial-view-reversed" id="tab-diag-monitoring">
+                    <!-- Left Column: Image Preview & Regions List -->
                     <div class="editorial-col-preview">
                         <div class="preview-specimen-frame">
                             <img src="assets/brain11.jpg" alt="Continuous Neuro-Monitoring" class="preview-stage-img">
@@ -572,19 +604,23 @@
                         <div class="preview-meta-panel">
                             <span class="preview-meta-title">INVESTIGATIVE TARGETS</span>
                             <ul class="preview-links-list">
-                                <li><span>Continuous Spectral Density</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Impedance &amp; Contact Telemetry</span><span class="ext-arrow">&#8599;</span></li>
-                                <li><span>Artifact Rejection Stream</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Continuous Spectral Density Tracking</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Electrode Contact &amp; Noise Telemetry</span><span class="ext-arrow">&#8599;</span></li>
+                                <li><span>Longitudinal Artifact-Rejection Streams</span><span class="ext-arrow">&#8599;</span></li>
                             </ul>
                         </div>
                     </div>
 
+                    <!-- Right Column: Narrative Content -->
                     <div class="editorial-col-narrative">
                         <p class="narrative-lead">
-                            Long-duration longitudinal electrophysiological recording protocols designed to monitor cognitive workload, vigilance, and signal stability across hours.
+                            Long-duration electrophysiological monitoring in rehabilitation facilities and research laboratories is prone to progressive signal degradation caused by skin-electrode drying, mechanical cable movement, and unmonitored fluctuations in patient vigilance.
                         </p>
                         <p class="narrative-body">
-                            Investigates adaptive baseline drift compensation and automated channel-quality telemetry to ensure consistent signal integrity over extended research sessions.
+                            BrainWave investigates continuous telemetry workflows designed to track spectral power drift, signal entropy, and channel-to-channel coherence over multi-hour experimental sessions, supporting extended cognitive workload assessments and long-term signal stability studies.
+                        </p>
+                        <p class="narrative-body">
+                            Real-time hardware monitoring assesses contact impedance and ambient 50/60 Hz interference, automatically annotating data epochs compromised by electrode displacement, perspiration, or gross motor movements. While these telemetry pipelines aim to enhance longitudinal data integrity, research prototypes are not certified medical diagnostic monitors and do not diagnose neurological disease, detect clinical seizures, or replace board-certified clinical EEG review. Rigorous validation requires benchmarking against certified clinical recording systems, characterizing false-alarm rates, and validating multi-hour telemetry stability under strict observational protocols.
                         </p>
                     </div>
                 </div>
@@ -644,103 +680,233 @@
         <!-- ============================================================
              SECTION 4: RESEARCH VECTORS — PART 3 (TOPICS 11 TO 16)
              ============================================================ -->
-        <section class="section research-showcase-section" id="vectors-part-3">
+        <!-- ============================================================
+             SECTION: BIOMARKERS, COGNITION & HIGH-BANDWIDTH SYSTEMS
+             ============================================================ -->
+        <section class="section vectors-tab-showcase" id="vectors-part-3" style="padding-top: 100px; padding-bottom: 100px;">
             <div class="container">
-                <div class="section-intro">
-                    <span class="section-num">03 // BIOMARKERS &amp; GENERAL PLATFORMS</span>
-                    <h2 class="section-heading">Biomarkers, Cognition &amp; High-Bandwidth Systems</h2>
-                    <p class="section-summary">
-                        Systemic brain-state metrics, conscious awareness evaluation, cognitive workload assessment, and unified neural infrastructure.
+
+                <div class="section-intro" style="margin-bottom: 28px;">
+                    <h2 class="section-heading" style="font-family: var(--font-display), Georgia, serif; font-size: 2.85rem; font-weight: 500; color: #111111; margin-bottom: 14px;">Biomarkers, Cognition &amp; High-Bandwidth Systems</h2>
+                    <p class="section-summary" style="font-family: var(--font-ui), sans-serif; font-size: 1.05rem; line-height: 1.6; color: rgba(30, 30, 30, 0.85); max-width: 760px; margin: 0 0 32px 0;">
+                        Investigating exploratory electrophysiological candidate markers, covert cognitive state monitoring, and scalable neural interface architectures.
                     </p>
                 </div>
 
-                <div class="showcase-rows-container">
-                    
-                    <!-- Row 11 -->
-                    <article class="showcase-row-item">
-                        <div class="row-graphic-col">
-                            <div class="showcase-photo-frame">
-                                <img src="assets/research11.jpg" alt="Neurological Biomarker Research" class="showcase-row-img" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="row-content-col">
-                            <h3 class="row-topic-title color-rose">Neurological Biomarker Research</h3>
-                            <p class="row-topic-desc">Supports investigation of neural patterns associated with neurological conditions for exploratory characterization.</p>
-                            <a href="software-dataset.html" class="row-pill-btn"><span>Explore Biomarkers</span></a>
-                        </div>
-                    </article>
-
-                    <!-- Row 12 -->
-                    <article class="showcase-row-item">
-                        <div class="row-graphic-col">
-                            <div class="showcase-photo-frame">
-                                <img src="assets/research12.jpg" alt="Brain-State Monitoring" class="showcase-row-img" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="row-content-col">
-                            <h3 class="row-topic-title color-sky">Brain-State Monitoring</h3>
-                            <p class="row-topic-desc">Targets assessment of selected indicators associated with consciousness, vigilance, and neurological function.</p>
-                            <a href="software-research.html" class="row-pill-btn"><span>Explore Brain States</span></a>
-                        </div>
-                    </article>
-
-                    <!-- Row 13 -->
-                    <article class="showcase-row-item">
-                        <div class="row-graphic-col">
-                            <div class="showcase-photo-frame">
-                                <img src="assets/research13.jpg" alt="High-Bandwidth Neural Communication" class="showcase-row-img" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="row-content-col">
-                            <h3 class="row-topic-title color-fuchsia">High-Bandwidth Neural Communication</h3>
-                            <p class="row-topic-desc">Aims to improve the speed, accuracy, and naturalness of neural communication using tokenized language models.</p>
-                            <a href="software-models.html" class="row-pill-btn"><span>Explore High Bandwidth</span></a>
-                        </div>
-                    </article>
-
-                    <!-- Row 14 -->
-                    <article class="showcase-row-item">
-                        <div class="row-graphic-col">
-                            <div class="showcase-photo-frame">
-                                <img src="assets/research14.jpg" alt="Cognitive-State Assessment" class="showcase-row-img" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="row-content-col">
-                            <h3 class="row-topic-title color-amber">Cognitive-State Assessment</h3>
-                            <p class="row-topic-desc">Targets the estimation of attention, cognitive workload, and fatigue from non-invasive physiological signals.</p>
-                            <a href="products.html" class="row-pill-btn"><span>Explore Assessment</span></a>
-                        </div>
-                    </article>
-
-                    <!-- Row 15 -->
-                    <article class="showcase-row-item">
-                        <div class="row-graphic-col">
-                            <div class="showcase-photo-frame">
-                                <img src="assets/research15.jpg" alt="General-Purpose Neural Interface Platform" class="showcase-row-img" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="row-content-col">
-                            <h3 class="row-topic-title color-electric">General-Purpose Neural Interface Platform</h3>
-                            <p class="row-topic-desc">Provides a broader technological direction for integrating neural communication, monitoring, assistive control, and rehabilitation.</p>
-                            <a href="software-sdk.html" class="row-pill-btn"><span>Explore Platform</span></a>
-                        </div>
-                    </article>
-
-                    <!-- Row 16 -->
-                    <article class="showcase-row-item">
-                        <div class="row-graphic-col">
-                            <div class="showcase-photo-frame">
-                                <img src="assets/research16.jpg" alt="Adaptive Neuromorphic Architectures" class="showcase-row-img" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="row-content-col">
-                            <h3 class="row-topic-title color-cyan-blue">Adaptive Neuromorphic Architectures</h3>
-                            <p class="row-topic-desc">Explores event-driven, low-power neuromorphic computing modules capable of processing spiking biosignal primitives directly on-edge.</p>
-                            <a href="hardware-8ch.html" class="row-pill-btn"><span>Explore Edge Architecture</span></a>
-                        </div>
-                    </article>
-
+                <!-- 6 Glassmorphic Capsule Tabs matching reference -->
+                <div class="capsule-tabs-container" style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 48px;">
+                    <button class="capsule-tab-btn-bio active" data-tab="tab-bio-biomarkers">Neurological Biomarkers</button>
+                    <button class="capsule-tab-btn-bio" data-tab="tab-bio-brainstate">Brain-State Monitoring</button>
+                    <button class="capsule-tab-btn-bio" data-tab="tab-bio-bandwidth">High-Bandwidth Communication</button>
+                    <button class="capsule-tab-btn-bio" data-tab="tab-bio-cognitive">Cognitive-State Assessment</button>
+                    <button class="capsule-tab-btn-bio" data-tab="tab-bio-platform">Interface Platform</button>
+                    <button class="capsule-tab-btn-bio" data-tab="tab-bio-neuromorphic">Neuromorphic Architectures</button>
                 </div>
+
+                <!-- TAB 1: Neurological Biomarkers -->
+                <div class="tab-editorial-view tab-editorial-view-reversed active" id="tab-bio-biomarkers">
+                    <div class="editorial-col-preview">
+                        <div class="preview-specimen-frame" style="border-radius: 12px; overflow: hidden; margin-bottom: 20px;">
+                            <img src="assets/brain11.jpg" alt="Neurological Biomarkers" class="preview-stage-img" style="width: 100%; height: auto; display: block; border-radius: 12px;">
+                        </div>
+                        <div class="preview-meta-panel">
+                            <span class="preview-meta-title" style="font-family: var(--font-mono, monospace); font-size: 0.72rem; letter-spacing: 1.5px; color: rgba(60, 45, 25, 0.65); display: block; margin-bottom: 12px; font-weight: 600;">INVESTIGATIVE TARGETS</span>
+                            <ul class="preview-links-list" style="list-style: none; padding: 0; margin: 0;">
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>Spectral Covariance Tracking</span><span>↗</span>
+                                </li>
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>Microstate Transition Rates</span><span>↗</span>
+                                </li>
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>Exploratory Baseline Anomaly Models</span><span>↗</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="editorial-col-narrative">
+                        <p class="narrative-lead" style="font-size: 1.05rem; line-height: 1.7; color: #111; margin-bottom: 16px;">
+                            Electrophysiological alterations often precede macro-structural neurological changes, yet establishing non-invasive electrophysiological candidate markers remains impeded by broad scalp volume conduction, environmental noise, and marked inter-individual spectral heterogeneity.
+                        </p>
+                        <p class="narrative-body" style="font-size: 0.95rem; line-height: 1.7; color: rgba(30,30,30,0.85); margin-bottom: 16px;">
+                            BrainWave investigates multi-channel resting-state and event-locked electrophysiological telemetry to identify candidate spectral and microstate anomalies. Signal processing workflows apply causal bandpass filtering, automated eye-blink artifact rejection, and spatial covariance modeling to characterize transient shifts in background rhythms, such as localized slowing or alterations in dominant oscillatory peaks.
+                        </p>
+                        <p class="narrative-body" style="font-size: 0.95rem; line-height: 1.7; color: rgba(30,30,30,0.85);">
+                            Investigating these candidate features aims to support longitudinal exploratory research into neurodegenerative and neurodevelopmental trajectories. These candidate patterns represent exploratory electrophysiological features rather than validated clinical diagnostics, as scalp EEG alone cannot definitively diagnose specific neurological pathologies or substitute for formal neurological evaluations. Clinical utility requires prospective multi-center cohorts, blinded validation against structural MRI and molecular assays, and rigorous assessment of sensitivity and specificity thresholds.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- TAB 2: Brain-State Monitoring -->
+                <div class="tab-editorial-view tab-editorial-view-reversed" id="tab-bio-brainstate" style="display: none;">
+                    <div class="editorial-col-preview">
+                        <div class="preview-specimen-frame" style="border-radius: 12px; overflow: hidden; margin-bottom: 20px;">
+                            <img src="assets/brain11.jpg" alt="Brain-State Monitoring" class="preview-stage-img" style="width: 100%; height: auto; display: block; border-radius: 12px;">
+                        </div>
+                        <div class="preview-meta-panel">
+                            <span class="preview-meta-title" style="font-family: var(--font-mono, monospace); font-size: 0.72rem; letter-spacing: 1.5px; color: rgba(60, 45, 25, 0.65); display: block; margin-bottom: 12px; font-weight: 600;">INVESTIGATIVE TARGETS</span>
+                            <ul class="preview-links-list" style="list-style: none; padding: 0; margin: 0;">
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>Sliding-Window Spectral Parameterization</span><span>↗</span>
+                                </li>
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>Phase Synchrony Metric Trajectories</span><span>↗</span>
+                                </li>
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>EMG-Contamination Exclusion Gates</span><span>↗</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="editorial-col-narrative">
+                        <p class="narrative-lead" style="font-size: 1.05rem; line-height: 1.7; color: #111; margin-bottom: 16px;">
+                            Continuous tracking of global cortical vigilance and mental fatigue is constrained by signal non-stationarity, gradual electrode contact drying, and the continuous superposition of ambient and physiological artifacts onto ongoing rhythms.
+                        </p>
+                        <p class="narrative-body" style="font-size: 0.95rem; line-height: 1.7; color: rgba(30,30,30,0.85); margin-bottom: 16px;">
+                            The proposed processing pipeline explores temporal tracking of broad oscillatory power distributions—specifically parameterized spectral dynamics across delta, theta, alpha, and beta bands—alongside channel-to-channel phase synchrony metrics computed over sliding observational windows.
+                        </p>
+                        <p class="narrative-body" style="font-size: 0.95rem; line-height: 1.7; color: rgba(30,30,30,0.85);">
+                            This capability is intended for exploratory tracking of vigilance fluctuations, workload transitions, and attention shifts in controlled human-factors and neuroergonomic experiments. Changes in macroscopic EEG rhythms reflect general arousal states rather than definitive, singular cognitive or emotional experiences. Validating reliability requires multi-hour recording protocols with concurrent physiological benchmarks, systematic quantification of baseline drift across sessions, and validation that state transitions are not mimicked by facial electromyographic contamination.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- TAB 3: High-Bandwidth Communication -->
+                <div class="tab-editorial-view tab-editorial-view-reversed" id="tab-bio-bandwidth" style="display: none;">
+                    <div class="editorial-col-preview">
+                        <div class="preview-specimen-frame" style="border-radius: 12px; overflow: hidden; margin-bottom: 20px;">
+                            <img src="assets/brain11.jpg" alt="High-Bandwidth Communication" class="preview-stage-img" style="width: 100%; height: auto; display: block; border-radius: 12px;">
+                        </div>
+                        <div class="preview-meta-panel">
+                            <span class="preview-meta-title" style="font-family: var(--font-mono, monospace); font-size: 0.72rem; letter-spacing: 1.5px; color: rgba(60, 45, 25, 0.65); display: block; margin-bottom: 12px; font-weight: 600;">INVESTIGATIVE TARGETS</span>
+                            <ul class="preview-links-list" style="list-style: none; padding: 0; margin: 0;">
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>Predefined Discrete Token Sets</span><span>↗</span>
+                                </li>
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>Penalized ITR Quantification (Bits/Min)</span><span>↗</span>
+                                </li>
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>Confidence-Calibrated Priors</span><span>↗</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="editorial-col-narrative">
+                        <p class="narrative-lead" style="font-size: 1.05rem; line-height: 1.7; color: #111; margin-bottom: 16px;">
+                            Non-invasive brain-computer communication channels are fundamentally information-constrained by the low spatial resolution and low signal-to-noise ratio of scalp-recorded electrophysiology, limiting sustainable information transfer rates (ITR).
+                        </p>
+                        <p class="narrative-body" style="font-size: 0.95rem; line-height: 1.7; color: rgba(30,30,30,0.85); margin-bottom: 16px;">
+                            BrainWave investigates high-density temporal feature extraction, multi-class event-related potential (ERP) paradigms, and probabilistic language priors to maximize reliable symbol selection rates. The computational stage explores joint optimization of spatial filters and confidence-calibrated decoding algorithms to distinguish intentional neural responses from baseline neural fluctuations.
+                        </p>
+                        <p class="narrative-body" style="font-size: 0.95rem; line-height: 1.7; color: rgba(30,30,30,0.85);">
+                            This research seeks to expand communication throughput for individuals with profound motor and vocal impairments, such as late-stage amyotrophic lateral sclerosis. The pipeline evaluates structured selection among predefined discrete communicative tokens rather than unconstrained thought reconstruction or continuous speech generation. Demonstrating meaningful performance requires reporting true information transfer rates in bits per minute, accounting for selection errors, timeout delays, and cognitive fatigue during extended operational sessions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- TAB 4: Cognitive-State Assessment -->
+                <div class="tab-editorial-view tab-editorial-view-reversed" id="tab-bio-cognitive" style="display: none;">
+                    <div class="editorial-col-preview">
+                        <div class="preview-specimen-frame" style="border-radius: 12px; overflow: hidden; margin-bottom: 20px;">
+                            <img src="assets/brain11.jpg" alt="Cognitive-State Assessment" class="preview-stage-img" style="width: 100%; height: auto; display: block; border-radius: 12px;">
+                        </div>
+                        <div class="preview-meta-panel">
+                            <span class="preview-meta-title" style="font-family: var(--font-mono, monospace); font-size: 0.72rem; letter-spacing: 1.5px; color: rgba(60, 45, 25, 0.65); display: block; margin-bottom: 12px; font-weight: 600;">INVESTIGATIVE TARGETS</span>
+                            <ul class="preview-links-list" style="list-style: none; padding: 0; margin: 0;">
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>P300 / N400 Evoked Complex Latencies</span><span>↗</span>
+                                </li>
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>Fronto-Parietal Spatial Derivations</span><span>↗</span>
+                                </li>
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>Circadian &amp; Habituation Controls</span><span>↗</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="editorial-col-narrative">
+                        <p class="narrative-lead" style="font-size: 1.05rem; line-height: 1.7; color: #111; margin-bottom: 16px;">
+                            Objective evaluation of covert cognitive processes—such as task engagement, working memory load, and perceptual processing—is limited by the difficulty of isolating task-relevant neural signatures from ongoing background cortical dynamics.
+                        </p>
+                        <p class="narrative-body" style="font-size: 0.95rem; line-height: 1.7; color: rgba(30,30,30,0.85); margin-bottom: 16px;">
+                            BrainWave evaluates event-related potentials (including P300 and N400 complexes) and task-related spectral perturbations time-locked to cognitive stimulus delivery. Spatial decomposition algorithms and surface Laplacian transforms are explored to isolate focal fronto-parietal activations from generalized background oscillations.
+                        </p>
+                        <p class="narrative-body" style="font-size: 0.95rem; line-height: 1.7; color: rgba(30,30,30,0.85);">
+                            Potential applications include assessing cognitive processing speed and attentional engagement in educational, clinical research, and assistive software contexts. Changes in evoked amplitudes or latencies provide indirect indices of neural processing and must not be equated with definitive measurements of consciousness, comprehension, or inner thought content. Rigorous evaluation necessitates controlled cognitive challenge paradigms, test-retest reliability across repeated sessions, and explicit accounting for circadian and pharmacological confounds.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- TAB 5: Interface Platform -->
+                <div class="tab-editorial-view tab-editorial-view-reversed" id="tab-bio-platform" style="display: none;">
+                    <div class="editorial-col-preview">
+                        <div class="preview-specimen-frame" style="border-radius: 12px; overflow: hidden; margin-bottom: 20px;">
+                            <img src="assets/brain11.jpg" alt="Interface Platform" class="preview-stage-img" style="width: 100%; height: auto; display: block; border-radius: 12px;">
+                        </div>
+                        <div class="preview-meta-panel">
+                            <span class="preview-meta-title" style="font-family: var(--font-mono, monospace); font-size: 0.72rem; letter-spacing: 1.5px; color: rgba(60, 45, 25, 0.65); display: block; margin-bottom: 12px; font-weight: 600;">INVESTIGATIVE TARGETS</span>
+                            <ul class="preview-links-list" style="list-style: none; padding: 0; margin: 0;">
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>LSL Event-Stream Synchronization</span><span>↗</span>
+                                </li>
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>BIDS-Compatible Data Governance</span><span>↗</span>
+                                </li>
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>End-to-End Ingestion Latency Bounds</span><span>↗</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="editorial-col-narrative">
+                        <p class="narrative-lead" style="font-size: 1.05rem; line-height: 1.7; color: #111; margin-bottom: 16px;">
+                            Translating disparate laboratory neural-decoding algorithms to real-world applications is hindered by rigid software architectures, inconsistent data standards, and proprietary hardware lock-in across the neurotechnology landscape.
+                        </p>
+                        <p class="narrative-body" style="font-size: 0.95rem; line-height: 1.7; color: rgba(30,30,30,0.85); margin-bottom: 16px;">
+                            BrainWave investigates a modular, open-architecture middleware platform that standardizes data ingestion from varied EEG front-ends, provides synchronized event-marker streaming via Lab Streaming Layer (LSL), and enforces BIDS-compliant dataset serialization.
+                        </p>
+                        <p class="narrative-body" style="font-size: 0.95rem; line-height: 1.7; color: rgba(30,30,30,0.85);">
+                            This framework aims to enable researchers and assistive technology developers to integrate and benchmark diverse decoding pipelines without redesigning core hardware-interfacing logic. The platform is an engineering and research middleware layer rather than an autonomous medical-grade operating framework. Validating cross-platform utility requires measuring end-to-end telemetry latency, assessing driver stability under continuous multi-channel streaming, and verifying compatibility across independent third-party analysis toolboxes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- TAB 6: Neuromorphic Architectures -->
+                <div class="tab-editorial-view tab-editorial-view-reversed" id="tab-bio-neuromorphic" style="display: none;">
+                    <div class="editorial-col-preview">
+                        <div class="preview-specimen-frame" style="border-radius: 12px; overflow: hidden; margin-bottom: 20px;">
+                            <img src="assets/brain11.jpg" alt="Neuromorphic Architectures" class="preview-stage-img" style="width: 100%; height: auto; display: block; border-radius: 12px;">
+                        </div>
+                        <div class="preview-meta-panel">
+                            <span class="preview-meta-title" style="font-family: var(--font-mono, monospace); font-size: 0.72rem; letter-spacing: 1.5px; color: rgba(60, 45, 25, 0.65); display: block; margin-bottom: 12px; font-weight: 600;">INVESTIGATIVE TARGETS</span>
+                            <ul class="preview-links-list" style="list-style: none; padding: 0; margin: 0;">
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>Sparse Event-Driven Encoding</span><span>↗</span>
+                                </li>
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>Edge Power Dissipation Thresholds</span><span>↗</span>
+                                </li>
+                                <li style="display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(60,45,25,0.15); font-size: 0.92rem; color: #111;">
+                                    <span>Hardware Emulator Benchmarking</span><span>↗</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="editorial-col-narrative">
+                        <p class="narrative-lead" style="font-size: 1.05rem; line-height: 1.7; color: #111; margin-bottom: 16px;">
+                            Deploying continuous multi-channel electrophysiological decoders on compact wearable hardware is constrained by the thermal and power demands of conventional synchronous digital computing architectures.
+                        </p>
+                        <p class="narrative-body" style="font-size: 0.95rem; line-height: 1.7; color: rgba(30,30,30,0.85); margin-bottom: 16px;">
+                            The research framework explores event-based encoding strategies and sparse neural representations as a conceptual direction for ultra-low-power edge computing. This explores mapping threshold-crossing electrophysiological features or discrete spectral transients into event-driven representations for energy-efficient inference.
+                        </p>
+                        <p class="narrative-body" style="font-size: 0.95rem; line-height: 1.7; color: rgba(30,30,30,0.85);">
+                            This investigative trajectory envisions wearable, battery-powered neural decoders capable of local inference without constant high-bandwidth wireless transmission. Neuromorphic processing represents an exploratory conceptual research path rather than an active commercial hardware implementation in BrainWave, and continuous macroscopic scalp potentials are not inherently equivalent to biological neural spikes. Future validation requires benchmarking computational power dissipation, latency profiles, and decoding accuracy on dedicated neuromorphic hardware emulators against optimized embedded microcontrollers.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
@@ -769,17 +935,48 @@
                 
                 <div class="ref-footer-col col-social">
                     <span class="ref-col-label">Follow our research</span>
-                    <div class="ref-social-icons">
-                        <a href="https://x.com" target="_blank" rel="noopener" class="ref-circle-btn" aria-label="X (Twitter)">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                        </a>
-                        <a href="https://github.com" target="_blank" rel="noopener" class="ref-circle-btn" aria-label="GitHub">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-                        </a>
-                        <a href="https://discord.com" target="_blank" rel="noopener" class="ref-circle-btn" aria-label="Discord">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.893.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
-                        </a>
-                    </div>
+                    <!-- COLORFUL SOCIAL ICONS -->
+<div class="footer-social-links" style="display: flex !important; gap: 14px !important; margin-top: 18px !important; align-items: center !important;">
+    <!-- Instagram: Official Multi-stop Radial/Linear Gradient -->
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style="display: inline-flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: 44px !important; border-radius: 50% !important; background: rgba(255,255,255,0.06) !important; border: 1px solid rgba(255,255,255,0.15) !important; text-decoration: none !important;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="display: block !important;">
+            <defs>
+                <linearGradient id="igGradientDirect" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#fdf497"/>
+                    <stop offset="5%" stop-color="#fdf497"/>
+                    <stop offset="45%" stop-color="#fd5949"/>
+                    <stop offset="60%" stop-color="#d6249f"/>
+                    <stop offset="90%" stop-color="#285AEB"/>
+                </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="20" height="20" rx="5.5" stroke="url(#igGradientDirect)" stroke-width="2.2"/>
+            <circle cx="12" cy="12" r="4.5" stroke="url(#igGradientDirect)" stroke-width="2.2"/>
+            <circle cx="17.5" cy="6.5" r="1.4" fill="url(#igGradientDirect)"/>
+        </svg>
+    </a>
+
+    <!-- X / Twitter: Electric Twitter Cyan -->
+    <a href="https://x.com" target="_blank" rel="noopener noreferrer" style="display: inline-flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: 44px !important; border-radius: 50% !important; background: rgba(255,255,255,0.06) !important; border: 1px solid rgba(255,255,255,0.15) !important; text-decoration: none !important;">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="#1DA1F2" style="display: block !important;">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+    </a>
+
+    <!-- Email: Google Gmail Red & Yellow -->
+    <a href="mailto:contact@higgsion.com" style="display: inline-flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: 44px !important; border-radius: 50% !important; background: rgba(255,255,255,0.06) !important; border: 1px solid rgba(255,255,255,0.15) !important; text-decoration: none !important;">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" style="display: block !important;">
+            <path d="M3 5h18c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2z" stroke="#EA4335" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 6l9 7 9-7" stroke="#FBBC05" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+
+    <!-- GitHub: Purple Octocat -->
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer" style="display: inline-flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: 44px !important; border-radius: 50% !important; background: rgba(255,255,255,0.06) !important; border: 1px solid rgba(255,255,255,0.15) !important; text-decoration: none !important;">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="#A371F7" style="display: block !important;">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+        </svg>
+    </a>
+</div>
                 </div>
 
                 <div class="ref-footer-col">
@@ -906,5 +1103,37 @@
         </div>
     </div>
     <script src="script.js"></script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const bioBtns = document.querySelectorAll('.capsule-tab-btn-bio');
+            const bioViews = document.querySelectorAll('#vectors-part-3 .tab-editorial-view');
+
+            bioBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    bioBtns.forEach(b => {
+                        b.classList.remove('active');
+                        b.style.background = 'rgba(255, 255, 255, 0.45)';
+                        b.style.borderColor = 'rgba(255, 255, 255, 0.6)';
+                    });
+                    bioViews.forEach(v => {
+                        v.classList.remove('active');
+                        v.style.display = 'none';
+                    });
+
+                    this.classList.add('active');
+                    this.style.background = '#D2C3E1';
+                    this.style.borderColor = '#BBA6CF';
+
+                    const targetId = this.getAttribute('data-tab');
+                    const targetView = document.getElementById(targetId);
+                    if (targetView) {
+                        targetView.classList.add('active');
+                        targetView.style.display = 'grid';
+                    }
+                });
+            });
+        });
+        </script>
 </body>
 </html>
