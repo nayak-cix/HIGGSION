@@ -1,5 +1,21 @@
+# Environment & secrets
 .env
-dist/
-build/
-.next/
-coverage/
+*.local
+
+# System & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local audit & test artifacts
+audit_*.py
+full_site_audit.py
+*.log
+.cache/
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
