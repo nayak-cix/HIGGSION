@@ -7779,3 +7779,47 @@ header.navbar,
         gap: 36px !important;
     }
 }
+
+/* ==========================================================================
+   DIAGNOSTICS: REVERSED (IMAGE LEFT, NARRATIVE RIGHT)
+   ========================================================================== */
+
+.capsule-tab-btn-diag {
+    border-radius: 9999px !important;
+    padding: 14px 28px !important;
+    font-family: var(--font-display), Georgia, serif !important;
+    font-size: 1.15rem !important;
+    font-weight: 500 !important;
+    color: #000000 !important;
+    background: rgba(255, 255, 255, 0.45) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03) !important;
+    cursor: pointer !important;
+    transition: all 0.25s ease !important;
+}
+
+.capsule-tab-btn-diag:hover {
+    background: rgba(210, 195, 225, 0.4) !important;
+    border-color: rgba(210, 195, 225, 0.8) !important;
+    transform: translateY(-1px) !important;
+}
+
+.capsule-tab-btn-diag.active {
+    background: #D2C3E1 !important;
+    color: #000000 !important;
+    border-color: #BBA6CF !important;
+    box-shadow: 0 6px 20px rgba(187, 166, 207, 0.35) !important;
+}
+
+/* Reversed layout: Left image (0.9fr), Right text (1.1fr) */
+.tab-editorial-view-reversed {
+    grid-template-columns: 0.9fr 1.1fr !important;
+}
+
+@media (max-width: 900px) {
+    .tab-editorial-view-reversed {
+        grid-template-columns: 1fr !important;
+    }
+}
