@@ -7635,3 +7635,147 @@ header.navbar,
         gap: 16px !important;
     }
 }
+
+/* ==========================================================================
+   RESEARCH: CAPSULE TABS & EDITORIAL REFERENCE VIEW
+   ========================================================================== */
+
+.vectors-tab-showcase {
+    padding-top: 60px !important;
+    padding-bottom: 90px !important;
+}
+
+/* 5 Capsule Buttons Container */
+.capsule-tabs-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 16px !important;
+    margin-bottom: 50px !important;
+}
+
+.capsule-tab-btn {
+    border-radius: 9999px !important;
+    padding: 14px 28px !important;
+    font-family: var(--font-display), Georgia, serif !important;
+    font-size: 1.15rem !important;
+    font-weight: 500 !important;
+    color: #000000 !important;
+    background: rgba(255, 255, 255, 0.45) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03) !important;
+    cursor: pointer !important;
+    transition: all 0.25s ease !important;
+}
+
+.capsule-tab-btn:hover {
+    background: rgba(210, 195, 225, 0.4) !important;
+    border-color: rgba(210, 195, 225, 0.8) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Active Capsule State */
+.capsule-tab-btn.active {
+    background: #D2C3E1 !important;
+    color: #000000 !important;
+    border-color: #BBA6CF !important;
+    box-shadow: 0 6px 20px rgba(187, 166, 207, 0.35) !important;
+}
+
+/* Editorial 2-Column Stage */
+.tab-editorial-view {
+    display: none !important;
+    grid-template-columns: 1.1fr 0.9fr !important;
+    gap: 56px !important;
+    align-items: start !important;
+    animation: fadeInTab 0.3s ease forwards !important;
+}
+
+.tab-editorial-view.active {
+    display: grid !important;
+}
+
+@keyframes fadeInTab {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Left Narrative Text */
+.editorial-col-narrative .narrative-lead {
+    font-family: var(--font-ui), sans-serif !important;
+    font-size: 1.05rem !important;
+    line-height: 1.7 !important;
+    color: #1a1a1a !important;
+    margin-bottom: 20px !important;
+}
+
+.editorial-col-narrative .narrative-body {
+    font-family: var(--font-ui), sans-serif !important;
+    font-size: 0.98rem !important;
+    line-height: 1.7 !important;
+    color: rgba(20, 20, 20, 0.8) !important;
+    margin-bottom: 20px !important;
+}
+
+/* Right Specimen & Link List */
+.preview-specimen-frame {
+    width: 100% !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+    background: #E8DECD !important;
+    border: 1px solid rgba(60, 45, 25, 0.12) !important;
+    margin-bottom: 24px !important;
+}
+
+.preview-stage-img {
+    width: 100% !important;
+    height: 280px !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+.preview-meta-panel {
+    background: transparent !important;
+    border-top: 1px solid rgba(60, 45, 25, 0.12) !important;
+    padding-top: 16px !important;
+}
+
+.preview-meta-title {
+    font-family: var(--font-mono), monospace !important;
+    font-size: 0.72rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.2px !important;
+    color: rgba(60, 45, 25, 0.6) !important;
+    display: block !important;
+    margin-bottom: 12px !important;
+}
+
+.preview-links-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.preview-links-list li {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 12px 0 !important;
+    border-bottom: 1px solid rgba(60, 45, 25, 0.1) !important;
+    font-family: var(--font-display), Georgia, serif !important;
+    font-size: 1.05rem !important;
+    color: #000000 !important;
+}
+
+.preview-links-list li .ext-arrow {
+    font-size: 1.1rem !important;
+    color: rgba(0, 0, 0, 0.45) !important;
+}
+
+@media (max-width: 900px) {
+    .tab-editorial-view {
+        grid-template-columns: 1fr !important;
+        gap: 36px !important;
+    }
+}
