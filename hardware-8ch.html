@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainWave 8-Channel EEG System | Higgsion Hardware</title>
+    <meta name="description" content="Technical specifications, electrode montages, and signal acquisition details for the BrainWave 8-Channel Non-Invasive EEG System.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #F3EBDD; color: #000000;">
+    <!-- Floating Tablet Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
+                <a href="index.html#about" class="nav-item">About</a>
+
+                <!-- Product Dropdown Menu Wrapper -->
+                                <!-- Product Dropdown Menu Wrapper -->
+                <div class="nav-dropdown-wrapper" id="product-dropdown-wrapper">
+                    <a href="products.html" class="nav-item nav-dropdown-btn" id="product-menu-trigger">
+                        <span>Products</span>
+                        <svg class="dropdown-chevron-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+
+                    <!-- Mega Dropdown Panel -->
+                    <div class="mega-dropdown-menu" id="product-mega-panel">
+                        <div class="mega-dropdown-inner">
+                            
+                            <!-- Left Column: Categories -->
+                            <div class="mega-col-categories">
+                                <span class="mega-eyebrow-label">CATEGORIES</span>
+                                
+                                <div class="mega-category-item active" data-target="panel-hardware">
+                                    <div class="cat-title">Hardware</div>
+                                    <span class="cat-hint">BrainWave 8-Ch Sensory System</span>
+                                </div>
+
+                                <div class="mega-category-item" data-target="panel-software">
+                                    <div class="cat-title">Software</div>
+                                    <span class="cat-hint">Research Platform, SDK &amp; APIs</span>
+                                </div>
+
+                                <div class="mega-category-item" data-target="panel-dataset">
+                                    <div class="cat-title">Corpus &amp; Models</div>
+                                    <span class="cat-hint">Standardized Neural Datasets</span>
+                                </div>
+                            </div>
+
+                            <div class="mega-vertical-divider"></div>
+
+                            <!-- Right Dynamic Content Area -->
+                            <div class="mega-col-content-view">
+                                
+                                <!-- Hardware View (Default Active) -->
+                                <div class="mega-tab-view active" id="view-hardware">
+                                    <div class="mega-view-grid">
+                                        <div class="mega-view-info">
+                                            <span class="mega-eyebrow-label">HARDWARE OVERVIEW</span>
+                                            <h4 class="mega-highlight-title">BrainWave 8-Ch Headset</h4>
+                                            <div class="headset-badge-tag">8-CH PRECISION MONTAGE</div>
+                                            <p class="mega-highlight-desc">
+                                                An 8-channel research-grade electroencephalography montage engineered for lightweight, non-invasive neural intent capture. Designed with active shielding, dry-contact compatibility, and micro-volt level signal fidelity.
+                                            </p>
+                                            <div class="mega-sub-links-group">
+                                                <a href="hardware-8ch.html" class="mega-sub-link">
+                                                    <span class="sub-link-title">Explore 8-Channel Specs &rarr;</span>
+                                                    <span class="sub-link-desc">Electrode placement, sampling rate, and low-noise active acquisition.</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="mega-view-card">
+                                            <div class="mega-card-frame">
+                                                <img src="assets/brain2.png" alt="BrainWave 8-Channel Headset" class="mega-preview-img">
+                                                <div class="mega-card-caption">
+                                                    <strong>BrainWave 8-Ch Headset</strong>
+                                                    <span>Laboratory-grade precision for non-invasive neural communication.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Software View -->
+                                <div class="mega-tab-view" id="view-software">
+                                    <div class="mega-view-grid">
+                                        <div class="mega-view-info">
+                                            <span class="mega-eyebrow-label">SOFTWARE &amp; DEVELOPER TOOLS</span>
+                                            <h4 class="mega-highlight-title">Computational Neural Suite</h4>
+                                            <p class="mega-highlight-desc">
+                                                Comprehensive developer tools, neural token datasets, and high-throughput streaming APIs to build brain–computer applications.
+                                            </p>
+                                            
+                                            <div class="software-features-list">
+                                                <a href="software-research.html" class="software-feature-item">
+                                                    <div class="feature-tag">PLATFORM</div>
+                                                    <div class="feature-detail">
+                                                        <span class="feature-name">Research Platform</span>
+                                                        <span class="feature-sub">Real-time telemetry, spectral decomposition, and protocol design.</span>
+                                                    </div>
+                                                </a>
+
+                                                <a href="software-sdk.html" class="software-feature-item">
+                                                    <div class="feature-tag">SDK &amp; API</div>
+                                                    <div class="feature-detail">
+                                                        <span class="feature-name">Core SDK &amp; Streaming API</span>
+                                                        <span class="feature-sub">Python &amp; C++ bindings, Lab Streaming Layer (LSL), sub-15ms WebSocket.</span>
+                                                    </div>
+                                                </a>
+
+                                                <a href="software-models.html" class="software-feature-item">
+                                                    <div class="feature-tag">MODELS</div>
+                                                    <div class="feature-detail">
+                                                        <span class="feature-name">Neural Models &amp; Apps</span>
+                                                        <span class="feature-sub">Spatiotemporal conformers &amp; phoneme decoding prototypes.</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="mega-view-card">
+                                            <div class="mega-card-frame">
+                                                <img src="assets/brain3.png" alt="Neural Decoding Suite" class="mega-preview-img">
+                                                <div class="mega-card-caption">
+                                                    <strong>Developer Suite</strong>
+                                                    <span>Stream live telemetry, train decoders, and integrate assistive apps.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Corpus & Models View -->
+                                <div class="mega-tab-view" id="view-dataset">
+                                    <div class="mega-view-grid">
+                                        <div class="mega-view-info">
+                                            <span class="mega-eyebrow-label">NEURAL DATASETS</span>
+                                            <h4 class="mega-highlight-title">Standardized Neural Corpus</h4>
+                                            <div class="headset-badge-tag">TARGET: 50–100 PARTICIPANTS</div>
+                                            <p class="mega-highlight-desc">
+                                                Synchronized 8-channel EEG recordings mapped against phoneme prompts, imagined speech sequences, and motor intentions.
+                                            </p>
+                                            <div class="mega-sub-links-group">
+                                                <a href="software-dataset.html" class="mega-sub-link">
+                                                    <span class="sub-link-title">Explore Dataset Documentation &rarr;</span>
+                                                    <span class="sub-link-desc">Target cohort metrics, schema, protocol verification and licensing.</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="mega-view-card">
+                                            <div class="mega-card-frame">
+                                                <img src="assets/dataset.jpg" alt="Neural Corpus" class="mega-preview-img">
+                                                <div class="mega-card-caption">
+                                                    <strong>Standardized Data Tokenizer</strong>
+                                                    <span>BIDS-compliant neural telemetry for machine learning.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <a href="index.html" class="nav-item nav-brand-highlight">HIGGSION</a>
+                <a href="research.html" class="nav-item">Research</a>
+                <a href="#contact" class="btn btn-secondary nav-cta" id="nav-contact-btn">Contact Us</a>
+            </nav>
+            <button type="button" class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle menu">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main style="padding-top: 140px; padding-bottom: 80px;">
+        <div class="container">
+            <!-- Breadcrumbs -->
+            <div style="font-family: var(--font-mono); font-size: 0.78rem; color: #000000; margin-bottom: 24px;">
+                <a href="products.html" style="color: #000000; text-decoration: none;">Products</a> &gt; <span>Hardware</span> &gt; <span>BrainWave 8-Channel System</span>
+            </div>
+
+            <div class="hardware-hero-grid" style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 50px; align-items: start; margin-bottom: 80px;">
+                <div class="hardware-media-column">
+                    <div style="background: rgba(70, 50, 25, 0.03); border: 1px solid rgba(60, 45, 25, 0.12); border-radius: 12px; padding: 36px; text-align: center;">
+                        <img src="assets/brain2.png" alt="BrainWave 8-Channel EEG Montage" style="max-width: 100%; height: auto; border-radius: 8px;">
+                    </div>
+                    <div style="margin-top: 16px; display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.72rem; color: #000000;">
+                        <span>FIG 1.0: 8-CHANNEL BILATERAL SENSOR MONTAGE</span>
+                        <span>STATUS: ACTIVE RESEARCH EVALUATION</span>
+                    </div>
+                </div>
+
+                <div class="hardware-spec-summary">
+                    <span class="section-tag-eyebrow">LABORATORY INSTRUMENTATION</span>
+                    <h1 class="hero-title" style="font-size: clamp(2.8rem, 5vw, 4.5rem); margin: 8px 0 20px 0;">BrainWave 8-Channel EEG</h1>
+                    <p style="font-size: 1.15rem; line-height: 1.6; color: #000000; margin-bottom: 24px;">
+                        An 8-channel research-grade electroencephalography system configured to capture bilateral temporal and articulatory motor activation before signal attenuation.
+                    </p>
+
+                    <div style="background: rgba(60, 45, 25, 0.06); border-left: 3px solid #B8A07A; padding: 16px 20px; margin-bottom: 30px;">
+                        <p style="margin: 0; font-size: 0.92rem; color: #000000;">
+                            <strong>Engineering Scope Note:</strong> This unit operates in a verified <strong>8-channel</strong> configuration. High-density montages (such as 128 channels) represent long-term research trajectories and are not present on physical test benches.
+                        </p>
+                    </div>
+
+                    <div class="specs-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 32px;">
+                        <div class="spec-item">
+                            <span class="spec-label">CHANNEL COUNT</span>
+                            <span class="spec-value">8 Channels</span>
+                            <span class="spec-desc">Active differential electrodes (F3, C3, T3, Pz, F4, C4, T4, Oz)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">SAMPLING RATE</span>
+                            <span class="spec-value">1,000 Hz / Channel</span>
+                            <span class="spec-desc">Independent per-channel simultaneous sampling</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">INPUT RESOLUTION</span>
+                            <span class="spec-value">24-Bit Sigma-Delta</span>
+                            <span class="spec-desc">Ultra-low noise analog front-end (AFE)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">NOISE FLOOR</span>
+                            <span class="spec-value">&lt; 0.8 µV RMS</span>
+                            <span class="spec-desc">Evaluated across 0.5 Hz – 45.0 Hz passband</span>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                        <a href="#contact" class="btn btn-primary">Request Protocol Access &amp; Spec Sheet</a>
+                        <a href="software-sdk.html" class="btn btn-outline">Explore Streaming SDK</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deep Dive Architecture -->
+            <section class="section" style="padding: 60px 0; border-top: 1px solid rgba(60, 45, 25, 0.08);">
+                <span class="section-num">DETAILED HARDWARE SPECIFICATIONS</span>
+                <h2 class="section-heading" style="margin-bottom: 40px;">Signal Acquisition &amp; Physical Characteristics</h2>
+
+                <div class="research-table-wrapper">
+                    <table class="research-table">
+                        <thead>
+                            <tr>
+                                <th>Subsystem</th>
+                                <th>Technical Parameter</th>
+                                <th>Operational Specification</th>
+                                <th>Design Rationale</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Electrode Interface</strong></td>
+                                <td>Electrode Type</td>
+                                <td>Ag/AgCl sintered active dry/wet compatible contacts</td>
+                                <td>Maintains stable skin-electrode contact without aggressive abrasion</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Active Shielding</strong></td>
+                                <td>Driven Right Leg (DRL) + Guarding</td>
+                                <td>Coaxial driven shields integrated along each electrode lead</td>
+                                <td>Suppresses 50/60Hz mains interference and ambient cable movement artifacts</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bandwidth &amp; Filtering</strong></td>
+                                <td>Hardware Passband</td>
+                                <td>0.1 Hz – 250 Hz hardware passband; 50/60 Hz notch filter</td>
+                                <td>Preserves slow cortical potentials and articulatory beta-frequency bursts</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Telemetry &amp; Transmission</strong></td>
+                                <td>Wireless &amp; Wired Modes</td>
+                                <td>Bluetooth 5.2 Low Energy (BLE) / USB-C Direct Serial</td>
+                                <td>Enables both ambulatory data collection and ultra-low-latency tethered recording</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Power &amp; Autonomy</strong></td>
+                                <td>Lithium Polymer Battery</td>
+                                <td>Continuous 6-hour operation on full charge (USB-C rechargable)</td>
+                                <td>Supports multi-session research protocols without mid-session interruption</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+        <!-- GSAP-STYLE MINIMAL EDITORIAL LIGHT FOOTER -->
+        <footer class="site-footer gsap-style-footer" id="footer">
+            <div class="container footer-main-wrapper">
+                <div class="footer-top-grid">
+                    <div class="footer-newsletter-col">
+                        <h2 class="newsletter-headline">Keep in the loop with the Higgsion® newsletter.</h2>
+                        <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault();">
+                            <div class="newsletter-input-wrap">
+                                <input type="email" placeholder="Email Address" required class="newsletter-input">
+                                <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                                        <polyline points="14 6 20 12 14 18"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="footer-columns-group">
+                        <div class="footer-nav-col">
+                            <h4 class="col-title">HIGGSION</h4>
+                            <ul class="col-links">
+                                <li><a href="index.html#about">About</a></li>
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="hardware-8ch.html">Hardware (8-Ch)</a></li>
+                                <li><a href="software-research.html">Software Platform</a></li>
+                                <li><a href="software-sdk.html">SDK & API</a></li>
+                                <li><a href="software-dataset.html">Dataset Corpus</a></li>
+                                <li><a href="research.html">Research Spectrum</a></li>
+                                <li><a href="#contact" class="footer-contact-trigger">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-nav-col">
+                            <h4 class="col-title">Connect</h4>
+                            <ul class="col-links">
+                                <li><a href="https://discord.com" target="_blank" rel="noopener">Discord</a></li>
+                                <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                                <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+                                <li><a href="https://x.com" target="_blank" rel="noopener">X</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom-flex">
+                    <div class="footer-copy-text">
+                        ©2026 HIGGSION – A Higgsion Technologies Inc. Initiative. All rights reserved.
+                    </div>
+                    <div class="footer-legal-group">
+                        <a href="#privacy">Privacy Policy.</a>
+                        <a href="#terms">Terms of Use.</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script src="script.js"></script>
+    <!-- Universal Accessible Modal Dialog -->
+    <div class="modal-backdrop" id="universal-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-window">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">&times;</button>
+            <div class="modal-header">
+                <span class="modal-eyebrow" id="modal-eyebrow">BRAINWAVE R&amp;D DESK</span>
+                <h3 class="modal-title" id="modal-title">Initiate Inquiry</h3>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <form id="modal-request-form" class="modal-form">
+                    <div class="form-group">
+                        <label for="modal-input-name">FULL NAME</label>
+                        <input type="text" id="modal-input-name" required placeholder="Dr. Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-input-email">INSTITUTIONAL EMAIL</label>
+                        <input type="email" id="modal-input-email" required placeholder="colleague@institution.edu">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-input-topic">TOPIC / INQUIRY TYPE</label>
+                        <input type="text" id="modal-input-topic" required placeholder="Hardware Allocation, SDK Integration, Dataset Access">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-input-message">MESSAGE</label>
+                        <textarea id="modal-input-message" rows="4" required placeholder="Describe your research protocol or inquiry details..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block modal-submit-btn">
+                        <span>Submit Inquiry</span>
+                    </button>
+                    <div id="modal-feedback" class="form-feedback" aria-live="polite"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

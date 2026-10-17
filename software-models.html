@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Models &amp; Applications | BrainWave Computational Suite</title>
+    <meta name="description" content="Spatiotemporal conformers, phoneme likelihood estimation, and constrained beam search decoders in the BrainWave neural architecture.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #F3EBDD; color: #000000;">
+    <!-- Floating Tablet Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
+                <a href="index.html#about" class="nav-item">About</a>
+
+                <!-- Product Dropdown Menu Wrapper -->
+                                <!-- Product Dropdown Menu Wrapper -->
+                <div class="nav-dropdown-wrapper" id="product-dropdown-wrapper">
+                    <a href="products.html" class="nav-item nav-dropdown-btn" id="product-menu-trigger">
+                        <span>Products</span>
+                        <svg class="dropdown-chevron-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+
+                    <!-- Mega Dropdown Panel -->
+                    <div class="mega-dropdown-menu" id="product-mega-panel">
+                        <div class="mega-dropdown-inner">
+                            
+                            <!-- Left Column: Categories -->
+                            <div class="mega-col-categories">
+                                <span class="mega-eyebrow-label">CATEGORIES</span>
+                                
+                                <div class="mega-category-item active" data-target="panel-hardware">
+                                    <div class="cat-title">Hardware</div>
+                                    <span class="cat-hint">BrainWave 8-Ch Sensory System</span>
+                                </div>
+
+                                <div class="mega-category-item" data-target="panel-software">
+                                    <div class="cat-title">Software</div>
+                                    <span class="cat-hint">Research Platform, SDK &amp; APIs</span>
+                                </div>
+
+                                <div class="mega-category-item" data-target="panel-dataset">
+                                    <div class="cat-title">Corpus &amp; Models</div>
+                                    <span class="cat-hint">Standardized Neural Datasets</span>
+                                </div>
+                            </div>
+
+                            <div class="mega-vertical-divider"></div>
+
+                            <!-- Right Dynamic Content Area -->
+                            <div class="mega-col-content-view">
+                                
+                                <!-- Hardware View (Default Active) -->
+                                <div class="mega-tab-view active" id="view-hardware">
+                                    <div class="mega-view-grid">
+                                        <div class="mega-view-info">
+                                            <span class="mega-eyebrow-label">HARDWARE OVERVIEW</span>
+                                            <h4 class="mega-highlight-title">BrainWave 8-Ch Headset</h4>
+                                            <div class="headset-badge-tag">8-CH PRECISION MONTAGE</div>
+                                            <p class="mega-highlight-desc">
+                                                An 8-channel research-grade electroencephalography montage engineered for lightweight, non-invasive neural intent capture. Designed with active shielding, dry-contact compatibility, and micro-volt level signal fidelity.
+                                            </p>
+                                            <div class="mega-sub-links-group">
+                                                <a href="hardware-8ch.html" class="mega-sub-link">
+                                                    <span class="sub-link-title">Explore 8-Channel Specs &rarr;</span>
+                                                    <span class="sub-link-desc">Electrode placement, sampling rate, and low-noise active acquisition.</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="mega-view-card">
+                                            <div class="mega-card-frame">
+                                                <img src="assets/brain2.png" alt="BrainWave 8-Channel Headset" class="mega-preview-img">
+                                                <div class="mega-card-caption">
+                                                    <strong>BrainWave 8-Ch Headset</strong>
+                                                    <span>Laboratory-grade precision for non-invasive neural communication.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Software View -->
+                                <div class="mega-tab-view" id="view-software">
+                                    <div class="mega-view-grid">
+                                        <div class="mega-view-info">
+                                            <span class="mega-eyebrow-label">SOFTWARE &amp; DEVELOPER TOOLS</span>
+                                            <h4 class="mega-highlight-title">Computational Neural Suite</h4>
+                                            <p class="mega-highlight-desc">
+                                                Comprehensive developer tools, neural token datasets, and high-throughput streaming APIs to build brain–computer applications.
+                                            </p>
+                                            
+                                            <div class="software-features-list">
+                                                <a href="software-research.html" class="software-feature-item">
+                                                    <div class="feature-tag">PLATFORM</div>
+                                                    <div class="feature-detail">
+                                                        <span class="feature-name">Research Platform</span>
+                                                        <span class="feature-sub">Real-time telemetry, spectral decomposition, and protocol design.</span>
+                                                    </div>
+                                                </a>
+
+                                                <a href="software-sdk.html" class="software-feature-item">
+                                                    <div class="feature-tag">SDK &amp; API</div>
+                                                    <div class="feature-detail">
+                                                        <span class="feature-name">Core SDK &amp; Streaming API</span>
+                                                        <span class="feature-sub">Python &amp; C++ bindings, Lab Streaming Layer (LSL), sub-15ms WebSocket.</span>
+                                                    </div>
+                                                </a>
+
+                                                <a href="software-models.html" class="software-feature-item">
+                                                    <div class="feature-tag">MODELS</div>
+                                                    <div class="feature-detail">
+                                                        <span class="feature-name">Neural Models &amp; Apps</span>
+                                                        <span class="feature-sub">Spatiotemporal conformers &amp; phoneme decoding prototypes.</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="mega-view-card">
+                                            <div class="mega-card-frame">
+                                                <img src="assets/brain3.png" alt="Neural Decoding Suite" class="mega-preview-img">
+                                                <div class="mega-card-caption">
+                                                    <strong>Developer Suite</strong>
+                                                    <span>Stream live telemetry, train decoders, and integrate assistive apps.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Corpus & Models View -->
+                                <div class="mega-tab-view" id="view-dataset">
+                                    <div class="mega-view-grid">
+                                        <div class="mega-view-info">
+                                            <span class="mega-eyebrow-label">NEURAL DATASETS</span>
+                                            <h4 class="mega-highlight-title">Standardized Neural Corpus</h4>
+                                            <div class="headset-badge-tag">TARGET: 50–100 PARTICIPANTS</div>
+                                            <p class="mega-highlight-desc">
+                                                Synchronized 8-channel EEG recordings mapped against phoneme prompts, imagined speech sequences, and motor intentions.
+                                            </p>
+                                            <div class="mega-sub-links-group">
+                                                <a href="software-dataset.html" class="mega-sub-link">
+                                                    <span class="sub-link-title">Explore Dataset Documentation &rarr;</span>
+                                                    <span class="sub-link-desc">Target cohort metrics, schema, protocol verification and licensing.</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="mega-view-card">
+                                            <div class="mega-card-frame">
+                                                <img src="assets/dataset.jpg" alt="Neural Corpus" class="mega-preview-img">
+                                                <div class="mega-card-caption">
+                                                    <strong>Standardized Data Tokenizer</strong>
+                                                    <span>BIDS-compliant neural telemetry for machine learning.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <a href="index.html" class="nav-item nav-brand-highlight">HIGGSION</a>
+                <a href="research.html" class="nav-item">Research</a>
+                <a href="#contact" class="btn btn-secondary nav-cta" id="nav-contact-btn">Contact Us</a>
+            </nav>
+            <button type="button" class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle menu">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main style="padding-top: 140px; padding-bottom: 80px;">
+        <div class="container">
+            <div style="font-family: var(--font-mono); font-size: 0.78rem; color: #000000; margin-bottom: 24px;">
+                <a href="products.html" style="color: #000000; text-decoration: none;">Products</a> &gt; <span>Software</span> &gt; <span>Neural Models &amp; Applications</span>
+            </div>
+
+            <div class="section-intro">
+                <span class="section-tag-eyebrow">SOFTWARE SUBCATEGORY 03</span>
+                <h1 class="hero-title" style="margin-bottom: 20px;">NEURAL MODELS &amp;<br>APPLICATIONS</h1>
+                <p class="section-summary" style="font-size: 1.2rem;">
+                    Investigative deep learning architectures decoding non-invasive EEG into articulatory phonemes and digital intent, designed to restore communication pathways for individuals experiencing locked-in states or speech motor loss.
+                </p>
+            </div>
+
+            <div class="product-cards-grid" style="margin-bottom: 50px;">
+                <div class="emotiv-style-card">
+                    <span class="badge badge-ongoing">RESEARCH PROTOTYPE</span>
+                    <h3 class="emotiv-card-title">Conformer-128 Spatiotemporal Backbone</h3>
+                    <p class="emotiv-card-desc">
+                        Unified convolution and self-attention blocks extracting local temporal patterns alongside cross-electrode spatial co-activations across a 400ms sliding context window.
+                    </p>
+                </div>
+                <div class="emotiv-style-card">
+                    <span class="badge badge-concept">EXPLORATORY MODEL</span>
+                    <h3 class="emotiv-card-title">Probabilistic Phoneme Estimation</h3>
+                    <p class="emotiv-card-desc">
+                        Continuous projection of neural embeddings into probability distributions over 42 English phoneme classes, calibrated to handle acoustic-temporal ambiguity directly.
+                    </p>
+                </div>
+                <div class="emotiv-style-card">
+                    <span class="badge badge-concept">CONCEPT PROTOCOL</span>
+                    <h3 class="emotiv-card-title">Constrained Beam Search Decoder</h3>
+                    <p class="emotiv-card-desc">
+                        Transformer-assisted and Weighted Finite-State Transducer (WFST) language restraint algorithms to curb stochastic hallucinations and synthesize deterministic words.
+                    </p>
+                </div>
+            </div>
+
+            <div style="background: rgba(70, 50, 25, 0.03); border: 1px solid rgba(60, 45, 25, 0.1); border-radius: 12px; padding: 36px;">
+                <h3 style="font-family: var(--font-heading); font-size: 1.4rem; margin-bottom: 12px;">Factual &amp; Clinical Disclaimer</h3>
+                <p style="color: #000000; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+                    All decoding benchmarks reflect laboratory R&amp;D configurations under controlled trials. BrainWave models are investigational prototypes and do not constitute approved medical devices for diagnostic or clinical speech replacement.
+                </p>
+            </div>
+        </div>
+    </main>
+
+        <!-- GSAP-STYLE MINIMAL EDITORIAL LIGHT FOOTER -->
+        <footer class="site-footer gsap-style-footer" id="footer">
+            <div class="container footer-main-wrapper">
+                <div class="footer-top-grid">
+                    <div class="footer-newsletter-col">
+                        <h2 class="newsletter-headline">Keep in the loop with the Higgsion® newsletter.</h2>
+                        <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault();">
+                            <div class="newsletter-input-wrap">
+                                <input type="email" placeholder="Email Address" required class="newsletter-input">
+                                <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                                        <polyline points="14 6 20 12 14 18"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="footer-columns-group">
+                        <div class="footer-nav-col">
+                            <h4 class="col-title">HIGGSION</h4>
+                            <ul class="col-links">
+                                <li><a href="index.html#about">About</a></li>
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="hardware-8ch.html">Hardware (8-Ch)</a></li>
+                                <li><a href="software-research.html">Software Platform</a></li>
+                                <li><a href="software-sdk.html">SDK & API</a></li>
+                                <li><a href="software-dataset.html">Dataset Corpus</a></li>
+                                <li><a href="research.html">Research Spectrum</a></li>
+                                <li><a href="#contact" class="footer-contact-trigger">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-nav-col">
+                            <h4 class="col-title">Connect</h4>
+                            <ul class="col-links">
+                                <li><a href="https://discord.com" target="_blank" rel="noopener">Discord</a></li>
+                                <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                                <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+                                <li><a href="https://x.com" target="_blank" rel="noopener">X</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom-flex">
+                    <div class="footer-copy-text">
+                        ©2026 HIGGSION – A Higgsion Technologies Inc. Initiative. All rights reserved.
+                    </div>
+                    <div class="footer-legal-group">
+                        <a href="#privacy">Privacy Policy.</a>
+                        <a href="#terms">Terms of Use.</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script src="script.js"></script>
+    <!-- Universal Accessible Modal Dialog -->
+    <div class="modal-backdrop" id="universal-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-window">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">&times;</button>
+            <div class="modal-header">
+                <span class="modal-eyebrow" id="modal-eyebrow">BRAINWAVE R&amp;D DESK</span>
+                <h3 class="modal-title" id="modal-title">Initiate Inquiry</h3>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <form id="modal-request-form" class="modal-form">
+                    <div class="form-group">
+                        <label for="modal-input-name">FULL NAME</label>
+                        <input type="text" id="modal-input-name" required placeholder="Dr. Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-input-email">INSTITUTIONAL EMAIL</label>
+                        <input type="email" id="modal-input-email" required placeholder="colleague@institution.edu">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-input-topic">TOPIC / INQUIRY TYPE</label>
+                        <input type="text" id="modal-input-topic" required placeholder="Hardware Allocation, SDK Integration, Dataset Access">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-input-message">MESSAGE</label>
+                        <textarea id="modal-input-message" rows="4" required placeholder="Describe your research protocol or inquiry details..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block modal-submit-btn">
+                        <span>Submit Inquiry</span>
+                    </button>
+                    <div id="modal-feedback" class="form-feedback" aria-live="polite"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

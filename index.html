@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainWave | Non-Invasive Neural Interface R&D</title>
+    <meta name="description" content="BrainWave by Higgsion: Developing non-invasive EEG-based brain-computer interfaces to decode imagined speech for assistive communication.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BrainWave | Non-Invasive Neural Interface R&D">
+    <meta property="og:description" content="Non-invasive EEG-based brain-computer interfaces exploring speech decoding and assistive neural pathways.">
+    <meta property="og:url" content="https://higgsion.tech/brainwave">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Typography: Editorial Condensed + Technical Sans + Monospace -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+        <!-- Floating Tablet Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
+                <a href="index.html#about" class="nav-item">About</a>
+
+                <!-- Product Dropdown Menu Wrapper -->
+                                <!-- Product Dropdown Menu Wrapper -->
+                <div class="nav-dropdown-wrapper" id="product-dropdown-wrapper">
+                    <a href="products.html" class="nav-item nav-dropdown-btn" id="product-menu-trigger">
+                        <span>Products</span>
+                        <svg class="dropdown-chevron-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+
+                    <!-- Mega Dropdown Panel -->
+                    <div class="mega-dropdown-menu" id="product-mega-panel">
+                        <div class="mega-dropdown-inner">
+                            
+                            <!-- Left Column: Categories -->
+                            <div class="mega-col-categories">
+                                <span class="mega-eyebrow-label">CATEGORIES</span>
+                                
+                                <div class="mega-category-item active" data-target="panel-hardware">
+                                    <div class="cat-title">Hardware</div>
+                                    <span class="cat-hint">BrainWave 8-Ch Sensory System</span>
+                                </div>
+
+                                <div class="mega-category-item" data-target="panel-software">
+                                    <div class="cat-title">Software</div>
+                                    <span class="cat-hint">Research Platform, SDK &amp; APIs</span>
+                                </div>
+
+                                <div class="mega-category-item" data-target="panel-dataset">
+                                    <div class="cat-title">Corpus &amp; Models</div>
+                                    <span class="cat-hint">Standardized Neural Datasets</span>
+                                </div>
+                            </div>
+
+                            <div class="mega-vertical-divider"></div>
+
+                            <!-- Right Dynamic Content Area -->
+                            <div class="mega-col-content-view">
+                                
+                                <!-- Hardware View (Default Active) -->
+                                <div class="mega-tab-view active" id="view-hardware">
+                                    <div class="mega-view-grid">
+                                        <div class="mega-view-info">
+                                            <span class="mega-eyebrow-label">HARDWARE OVERVIEW</span>
+                                            <h4 class="mega-highlight-title">BrainWave 8-Ch Headset</h4>
+                                            <div class="headset-badge-tag">8-CH PRECISION MONTAGE</div>
+                                            <p class="mega-highlight-desc">
+                                                An 8-channel research-grade electroencephalography montage engineered for lightweight, non-invasive neural intent capture. Designed with active shielding, dry-contact compatibility, and micro-volt level signal fidelity.
+                                            </p>
+                                            <div class="mega-sub-links-group">
+                                                <a href="hardware-8ch.html" class="mega-sub-link">
+                                                    <span class="sub-link-title">Explore 8-Channel Specs &rarr;</span>
+                                                    <span class="sub-link-desc">Electrode placement, sampling rate, and low-noise active acquisition.</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="mega-view-card">
+                                            <div class="mega-card-frame">
+                                                <img src="assets/brain2.png" alt="BrainWave 8-Channel Headset" class="mega-preview-img">
+                                                <div class="mega-card-caption">
+                                                    <strong>BrainWave 8-Ch Headset</strong>
+                                                    <span>Laboratory-grade precision for non-invasive neural communication.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Software View -->
+                                <div class="mega-tab-view" id="view-software">
+                                    <div class="mega-view-grid">
+                                        <div class="mega-view-info">
+                                            <span class="mega-eyebrow-label">SOFTWARE &amp; DEVELOPER TOOLS</span>
+                                            <h4 class="mega-highlight-title">Computational Neural Suite</h4>
+                                            <p class="mega-highlight-desc">
+                                                Comprehensive developer tools, neural token datasets, and high-throughput streaming APIs to build brain–computer applications.
+                                            </p>
+                                            
+                                            <div class="software-features-list">
+                                                <a href="software-research.html" class="software-feature-item">
+                                                    <div class="feature-tag">PLATFORM</div>
+                                                    <div class="feature-detail">
+                                                        <span class="feature-name">Research Platform</span>
+                                                        <span class="feature-sub">Real-time telemetry, spectral decomposition, and protocol design.</span>
+                                                    </div>
+                                                </a>
+
+                                                <a href="software-sdk.html" class="software-feature-item">
+                                                    <div class="feature-tag">SDK &amp; API</div>
+                                                    <div class="feature-detail">
+                                                        <span class="feature-name">Core SDK &amp; Streaming API</span>
+                                                        <span class="feature-sub">Python &amp; C++ bindings, Lab Streaming Layer (LSL), sub-15ms WebSocket.</span>
+                                                    </div>
+                                                </a>
+
+                                                <a href="software-models.html" class="software-feature-item">
+                                                    <div class="feature-tag">MODELS</div>
+                                                    <div class="feature-detail">
+                                                        <span class="feature-name">Neural Models &amp; Apps</span>
+                                                        <span class="feature-sub">Spatiotemporal conformers &amp; phoneme decoding prototypes.</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="mega-view-card">
+                                            <div class="mega-card-frame">
+                                                <img src="assets/brain3.png" alt="Neural Decoding Suite" class="mega-preview-img">
+                                                <div class="mega-card-caption">
+                                                    <strong>Developer Suite</strong>
+                                                    <span>Stream live telemetry, train decoders, and integrate assistive apps.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Corpus & Models View -->
+                                <div class="mega-tab-view" id="view-dataset">
+                                    <div class="mega-view-grid">
+                                        <div class="mega-view-info">
+                                            <span class="mega-eyebrow-label">NEURAL DATASETS</span>
+                                            <h4 class="mega-highlight-title">Standardized Neural Corpus</h4>
+                                            <div class="headset-badge-tag">TARGET: 50–100 PARTICIPANTS</div>
+                                            <p class="mega-highlight-desc">
+                                                Synchronized 8-channel EEG recordings mapped against phoneme prompts, imagined speech sequences, and motor intentions.
+                                            </p>
+                                            <div class="mega-sub-links-group">
+                                                <a href="software-dataset.html" class="mega-sub-link">
+                                                    <span class="sub-link-title">Explore Dataset Documentation &rarr;</span>
+                                                    <span class="sub-link-desc">Target cohort metrics, schema, protocol verification and licensing.</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="mega-view-card">
+                                            <div class="mega-card-frame">
+                                                <img src="assets/dataset.jpg" alt="Neural Corpus" class="mega-preview-img">
+                                                <div class="mega-card-caption">
+                                                    <strong>Standardized Data Tokenizer</strong>
+                                                    <span>BIDS-compliant neural telemetry for machine learning.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <a href="index.html" class="nav-item nav-brand-highlight">HIGGSION</a>
+                <a href="research.html" class="nav-item">Research</a>
+                <a href="#contact" class="btn btn-secondary nav-cta" id="nav-contact-btn">Contact Us</a>
+            </nav>
+            <button type="button" class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle menu">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        
+                <!-- SECTION 1: HERO -->
+        <section class="section hero-section" id="hero">
+        <!-- Hero Background Video Container -->
+        <div class="hero-video-bg-container">
+            <video class="hero-video-element" autoplay loop muted playsinline preload="auto">
+                <source src="assets/collab1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-video-overlay"></div>
+        </div>
+
+            </div>
+            <div class="container hero-centered-container">
+                <div class="hero-text-block">
+                    <h2 class="hero-h2-title">BrainWave</h2>
+                    <p class="hero-h2-desc">The engineering by Higgsion, the next frontier of neural intelligence, decoding the brain’s language into human capability.</p>
+                </div>
+            </div>
+        </section>
+
+                                <!-- SECTION 2: ABOUT BRAINWAVE (PRECISION LABORATORY ARCHITECTURE) -->
+        <section class="section about-brainwave-section" id="about">
+            <div class="container">
+                
+                <!-- Top Header Row -->
+                <div class="about-lead-header">
+                    <div class="about-eyebrow-row">
+                        <span class="about-kicker">INITIATIVE OVERVIEW</span>
+                        <span class="about-meta-divider">/</span>
+                        <span class="about-tagline">NON-INVASIVE NEURAL COMPUTING</span>
+                    </div>
+                    <h2 class="about-display-heading">What is BrainWave?</h2>
+                </div>
+
+                <!-- Main Asymmetrical Grid -->
+                <div class="about-editorial-stage">
+                    
+                    <!-- Left: Instrumented Specimen Viewport -->
+                    <div class="specimen-viewport-card">
+                        <div class="specimen-viewport-inner">
+                            <img src="assets/brain11.jpg" alt="Neural cortical illustration" class="specimen-img">
+                            
+                            <!-- Precision Telemetry Accents -->
+                            <div class="viewport-hud-top">
+                                <span class="hud-mono">FIG. 01 // CORTICAL MAPPING</span>
+                                <span class="hud-status-dot"></span>
+                            </div>
+                            <div class="viewport-hud-bottom">
+                                <div class="hud-data-cell">
+                                    <span class="hud-lbl">LATENCY</span>
+                                    <span class="hud-val">&lt; 14 ms</span>
+                                </div>
+                                <div class="hud-data-cell">
+                                    <span class="hud-lbl">CHANNELS</span>
+                                    <span class="hud-val">8-CH ACTIVE</span>
+                                </div>
+                                <div class="hud-data-cell">
+                                    <span class="hud-lbl">SIGNAL</span>
+                                    <span class="hud-val">µV-SCALE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Editorial Narrative & Core Principles -->
+                    <div class="about-content-column">
+                        <p class="about-lead-statement">
+                            BrainWave is a neurotechnology initiative bridging the gap between human neural dynamics and intelligent computing.
+                        </p>
+                        <p class="about-secondary-body">
+                            We develop non-invasive interfaces that decode neural patterns to enable natural assistive communication, advance neurological research, and pioneer non-invasive brain–computer interactions for individuals facing motor impairments.
+                        </p>
+
+                        <!-- Structured 3-Pillar Grid (Eliminating Dead Space) -->
+                        <div class="about-pillars-grid">
+                            <div class="about-pillar-card">
+                                <span class="pillar-num">01</span>
+                                <h4 class="pillar-title">Neural Intent Capture</h4>
+                                <p class="pillar-desc">Isolating covert speech patterns and articulatory motor intent before signal attenuation.</p>
+                            </div>
+                            <div class="about-pillar-card">
+                                <span class="pillar-num">02</span>
+                                <h4 class="pillar-title">Low-Noise Instrumentation</h4>
+                                <p class="pillar-desc">Active differential shielding delivering sub-microvolt resolution across scalp montages.</p>
+                            </div>
+                            <div class="about-pillar-card">
+                                <span class="pillar-num">03</span>
+                                <h4 class="pillar-title">Translational Vectors</h4>
+                                <p class="pillar-desc">Building assistive pathways for locked-in states, stroke rehabilitation, and ALS.</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+                                <!-- SECTION: NEUROLOGICAL CHALLENGES (EDITORIAL SHOWCASE CAROUSEL) -->
+        <section class="section Neurological challenges-showcase-section" id="Neurological challenges">
+            <div class="container showcase-header-container">
+                <h2 class="showcase-giant-title">Neurological Challenges</h2>
+            </div>
+            <div class="showcase-slider-wrapper">
+                <div class="showcase-track" id="showcase-track">
+                    <!-- 01: ALS -->
+                    <article class="showcase-card" data-index="0">
+                        <div class="showcase-card-inner">
+                            <div class="showcase-img-box">
+                                <img src="assets/challenge1.jpg" alt="ALS" class="showcase-media-img" loading="lazy">
+                                <span class="showcase-roman-tag">I</span>
+                            </div>
+                        </div>
+                        <div class="showcase-card-footer">
+                            <h3 class="showcase-item-title">ALS (Amyotrophic Lateral Sclerosis)</h3>
+                            <p class="showcase-item-sub">A progressive disease that weakens muscles and can eventually deprive patients of their ability to speak or move.</p>
+                        </div>
+                    </article>
+
+                    <!-- 02: Locked-In Syndrome -->
+                    <article class="showcase-card" data-index="1">
+                        <div class="showcase-card-inner">
+                            <div class="showcase-img-box">
+                                <img src="assets/challenge2.jpg" alt="Locked-In Syndrome" class="showcase-media-img" loading="lazy">
+                                <span class="showcase-roman-tag">II</span>
+                            </div>
+                        </div>
+                        <div class="showcase-card-footer">
+                            <h3 class="showcase-item-title">Locked-In Syndrome</h3>
+                            <p class="showcase-item-sub">A condition in which patients remain conscious but lose nearly all voluntary muscle movement, making communication extremely difficult.</p>
+                        </div>
+                    </article>
+
+                    <!-- 03: Stroke -->
+                    <article class="showcase-card" data-index="2">
+                        <div class="showcase-card-inner">
+                            <div class="showcase-img-box">
+                                <img src="assets/challenge3.jpg" alt="Stroke" class="showcase-media-img" loading="lazy">
+                                <span class="showcase-roman-tag">III</span>
+                            </div>
+                        </div>
+                        <div class="showcase-card-footer">
+                            <h3 class="showcase-item-title">Stroke</h3>
+                            <p class="showcase-item-sub">Brain damage caused by interrupted blood supply or bleeding that can impair speech, movement, and cognitive function.</p>
+                        </div>
+                    </article>
+
+                    <!-- 04: Spinal Cord Injury -->
+                    <article class="showcase-card" data-index="3">
+                        <div class="showcase-card-inner">
+                            <div class="showcase-img-box">
+                                <img src="assets/challenge4.jpg" alt="Spinal Cord Injury" class="showcase-media-img" loading="lazy">
+                                <span class="showcase-roman-tag">IV</span>
+                            </div>
+                        </div>
+                        <div class="showcase-card-footer">
+                            <h3 class="showcase-item-title">Spinal Cord Injury</h3>
+                            <p class="showcase-item-sub">Damage to the spinal cord that can disrupt movement, sensation, and communication between the brain and body.</p>
+                        </div>
+                    </article>
+
+                    <!-- 05: Cerebral Palsy -->
+                    <article class="showcase-card" data-index="4">
+                        <div class="showcase-card-inner">
+                            <div class="showcase-img-box">
+                                <img src="assets/challenge5.jpg" alt="Cerebral Palsy" class="showcase-media-img" loading="lazy">
+                                <span class="showcase-roman-tag">V</span>
+                            </div>
+                        </div>
+                        <div class="showcase-card-footer">
+                            <h3 class="showcase-item-title">Cerebral Palsy</h3>
+                            <p class="showcase-item-sub">A group of disorders affecting movement, muscle coordination, and posture due to early brain development or injury.</p>
+                        </div>
+                    </article>
+
+                    <!-- 06: Epilepsy -->
+                    <article class="showcase-card" data-index="5">
+                        <div class="showcase-card-inner">
+                            <div class="showcase-img-box">
+                                <img src="assets/challenge6.jpg" alt="Epilepsy" class="showcase-media-img" loading="lazy">
+                                <span class="showcase-roman-tag">VI</span>
+                            </div>
+                        </div>
+                        <div class="showcase-card-footer">
+                            <h3 class="showcase-item-title">Epilepsy</h3>
+                            <p class="showcase-item-sub">A neurological disorder characterized by recurrent seizures caused by abnormal electrical activity in the brain.</p>
+                        </div>
+                    </article>
+
+                    <!-- 07: Parkinson's Disease -->
+                    <article class="showcase-card" data-index="6">
+                        <div class="showcase-card-inner">
+                            <div class="showcase-img-box">
+                                <img src="assets/challenge7.jpg" alt="Parkinson's Disease" class="showcase-media-img" loading="lazy">
+                                <span class="showcase-roman-tag">VII</span>
+                            </div>
+                        </div>
+                        <div class="showcase-card-footer">
+                            <h3 class="showcase-item-title">Parkinson's Disease</h3>
+                            <p class="showcase-item-sub">A progressive disorder that affects movement, often causing tremors, stiffness, and slowed movements.</p>
+                        </div>
+                    </article>
+
+                    <!-- 08: Essential Tremor -->
+                    <article class="showcase-card" data-index="7">
+                        <div class="showcase-card-inner">
+                            <div class="showcase-img-box">
+                                <img src="assets/challenge8.jpg" alt="Essential Tremor" class="showcase-media-img" loading="lazy">
+                                <span class="showcase-roman-tag">VIII</span>
+                            </div>
+                        </div>
+                        <div class="showcase-card-footer">
+                            <h3 class="showcase-item-title">Essential Tremor</h3>
+                            <p class="showcase-item-sub">A neurological condition that causes involuntary shaking, particularly during activities such as writing or holding objects.</p>
+                        </div>
+                    </article>
+
+                    <!-- 09: Traumatic Brain Injury (TBI) -->
+                    <article class="showcase-card" data-index="8">
+                        <div class="showcase-card-inner">
+                            <div class="showcase-img-box">
+                                <img src="assets/challenge9.jpg" alt="Traumatic Brain Injury (TBI)" class="showcase-media-img" loading="lazy">
+                                <span class="showcase-roman-tag">IX</span>
+                            </div>
+                        </div>
+                        <div class="showcase-card-footer">
+                            <h3 class="showcase-item-title">Traumatic Brain Injury (TBI)</h3>
+                            <p class="showcase-item-sub">Brain damage resulting from an external force that may affect movement, memory, communication, or consciousness.</p>
+                        </div>
+                    </article>
+
+                    <!-- 10: Disorders of Consciousness -->
+                    <article class="showcase-card" data-index="9">
+                        <div class="showcase-card-inner">
+                            <div class="showcase-img-box">
+                                <img src="assets/challenge10.jpg" alt="Disorders of Consciousness" class="showcase-media-img" loading="lazy">
+                                <span class="showcase-roman-tag">X</span>
+                            </div>
+                        </div>
+                        <div class="showcase-card-footer">
+                            <h3 class="showcase-item-title">Disorders of Consciousness</h3>
+                            <p class="showcase-item-sub">Conditions in which brain injury or illness severely reduces awareness of oneself or the surrounding environment.</p>
+                        </div>
+                    </article>
+
+                    <!-- 11: Sleep Disorders -->
+                    <article class="showcase-card" data-index="10">
+                        <div class="showcase-card-inner">
+                            <div class="showcase-img-box">
+                                <img src="assets/challenge11.jpg" alt="Sleep Disorders" class="showcase-media-img" loading="lazy">
+                                <span class="showcase-roman-tag">XI</span>
+                            </div>
+                        </div>
+                        <div class="showcase-card-footer">
+                            <h3 class="showcase-item-title">Sleep Disorders</h3>
+                            <p class="showcase-item-sub">Conditions that disrupt normal sleep patterns and may affect brain function, alertness, and overall health.</p>
+                        </div>
+                    </article>
+
+                    <!-- 12: Severe Motor and Communication Impairments -->
+                    <article class="showcase-card" data-index="11">
+                        <div class="showcase-card-inner">
+                            <div class="showcase-img-box">
+                                <img src="assets/challenge12.jpg" alt="Severe Motor and Communication Impairments" class="showcase-media-img" loading="lazy">
+                                <span class="showcase-roman-tag">XII</span>
+                            </div>
+                        </div>
+                        <div class="showcase-card-footer">
+                            <h3 class="showcase-item-title">Severe Motor and Communication Impairments</h3>
+                            <p class="showcase-item-sub">Conditions that limit a person's ability to move or communicate through conventional speech and physical interaction.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="container showcase-action-bar">
+                <a href="research.html" class="showcase-pill-btn"><span>Explore All Challenges</span></a>
+                <div class="showcase-nav-arrows">
+                    <button type="button" class="arrow-btn" id="showcase-prev" aria-label="Previous challenge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+                    <button type="button" class="arrow-btn" id="showcase-next" aria-label="Next challenge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- SECTION 4: HOW IT WORKS -->
+
+        <!-- SECTION 6: HARDWARE -->
+        
+
+
+        <!-- SECTION 8: APPLICATIONS -->
+        
+
+        <!-- SECTION 9: PRODUCT ROADMAP -->
+        
+
+        <!-- SECTION 10: BRAND LOGO SHOWCASE -->
+        <section class="section logo-brand-section" id="collaboration">
+        <!-- Low Transparency Neurons Sketch Imprint Layer -->
+        <div class="neuron-sketch-backdrop"></div>
+            <div class="container">
+                <div class="brand-showcase-wrapper reveal" style="flex-direction: column; text-align: center;" style="flex-direction: column; text-align: center;">
+                    <img src="assets/brandlogo.png" alt="Company Logo" class="centered-brand-logo">
+                    <h2 class="brand-heading-title" style="text-align: center; font-size: clamp(2.2rem, 3.6vw, 3.2rem); font-weight: 800; letter-spacing: 3px; text-transform: uppercase; margin-top: 32px; margin-bottom: 14px; color: #000000; line-height: 1.1;">HIGGSION</h2>
+                    <p class="brand-heading-sub" style="text-align: center; font-family: var(--font-mono, monospace); font-size: clamp(0.78rem, 1.2vw, 0.95rem); letter-spacing: 2.2px; text-transform: uppercase; color: #000000; margin: 0 auto; max-width: 960px; line-height: 1.6;">THE ULTIMATE NEURAL ENGINEERING RESEARCH &amp; DEVELOPMENT ORGANIZATION</p>
+                </div>
+            </div>
+        </section>
+
+            <!-- SECTION 11: FOOTER (GSAP-STYLE MINIMAL LIGHT PALETTE) -->
+        <footer class="site-footer gsap-style-footer" id="footer">
+            <div class="container footer-main-wrapper">
+                <div class="footer-top-grid">
+                    <!-- Left: Newsletter Subscription -->
+                    <div class="footer-newsletter-col">
+                        <h2 class="newsletter-headline">Keep in the loop with the Higgsion® newsletter.</h2>
+                        <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault();">
+                            <div class="newsletter-input-wrap">
+                                <input type="email" placeholder="Email Address" required class="newsletter-input">
+                                <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                                        <polyline points="14 6 20 12 14 18"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Right: Navigation Link Columns -->
+                    <div class="footer-columns-group">
+                        <div class="footer-nav-col">
+                            <h4 class="col-title">HIGGSION</h4>
+                            <ul class="col-links">
+                                <li><a href="index.html#about">About</a></li>
+                                <li><a href="index.html#challenges">Challenges</a></li>
+                                <li><a href="research.html">Showcase</a></li>
+                                <li><a href="research.html">Research & Spec</a></li>
+                                <li><a href="#contact" class="footer-contact-trigger">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-nav-col">
+                            <h4 class="col-title">Connect</h4>
+                            <ul class="col-links">
+                                <li><a href="https://discord.com" target="_blank" rel="noopener">Discord</a></li>
+                                <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                                <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+                                <li><a href="https://x.com" target="_blank" rel="noopener">X</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Row: Copyright & Legal Links -->
+                <div class="footer-bottom-flex">
+                    <div class="footer-copy-text">
+                        ©2026 HIGGSION – A Higgsion Technologies Product. All rights reserved.
+                    </div>
+                    <div class="footer-legal-group">
+                        <a href="#privacy">Privacy Policy.</a>
+                        <a href="#terms">Terms of Use.</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+            <!-- Universal Accessible Modal Dialog -->
+    <div class="modal-backdrop" id="universal-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-window">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">&times;</button>
+            <div class="modal-header">
+                <span class="modal-eyebrow" id="modal-eyebrow">BRAINWAVE R&amp;D DESK</span>
+                <h3 class="modal-title" id="modal-title">Initiate Inquiry</h3>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <form id="modal-request-form" class="modal-form">
+                    <div class="form-group">
+                        <label for="modal-input-name">FULL NAME</label>
+                        <input type="text" id="modal-input-name" required placeholder="Dr. Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-input-email">INSTITUTIONAL EMAIL</label>
+                        <input type="email" id="modal-input-email" required placeholder="colleague@institution.edu">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-input-topic">TOPIC / INQUIRY TYPE</label>
+                        <input type="text" id="modal-input-topic" required placeholder="Hardware Allocation, SDK Integration, Dataset Access">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-input-message">MESSAGE</label>
+                        <textarea id="modal-input-message" rows="4" required placeholder="Describe your research protocol or inquiry details..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block modal-submit-btn">
+                        <span>Submit Inquiry</span>
+                    </button>
+                    <div id="modal-feedback" class="form-feedback" aria-live="polite"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Script -->
+    <script src="script.js"></script>
+
+    <!-- Smart Sticky/Scroll-Aware Navbar -->
+    <script>
+    (function() {
+        let lastScrollY = window.pageYOffset || document.documentElement.scrollTop;
+        const navbar = document.querySelector('header.navbar') || document.querySelector('.navbar');
+
+        if (!navbar) return;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Page ke top par hamesha visible rakhein
+            if (currentScrollY <= 20) {
+                navbar.classList.remove('nav-hidden');
+            } 
+            // Niche scroll karne par hide karein
+            else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                navbar.classList.add('nav-hidden');
+            } 
+            // Upar scroll karte hi reveal karein
+            else if (currentScrollY < lastScrollY) {
+                navbar.classList.remove('nav-hidden');
+            }
+
+            lastScrollY = Math.max(0, currentScrollY);
+        }, { passive: true });
+    })();
+    </script>
+
+    
+</body>
+</html>
