@@ -215,80 +215,208 @@
 
                                 <!-- SECTION 2: ABOUT BRAINWAVE (PRECISION LABORATORY ARCHITECTURE) -->
                 <!-- SECTION 2: ABOUT BRAINWAVE (PRECISION LABORATORY ARCHITECTURE) -->
-        <section class="section about-brainwave-section" id="about">
+        <!-- ============================================================
+             SECTION: WHAT IS BRAINWAVE?
+             ============================================================ -->
+        <!-- ============================================================
+             SECTION: WHAT IS BRAINWAVE? (SCIENTIFIC OVERVIEW & METHODOLOGY)
+             ============================================================ -->
+        <!-- ============================================================
+             SECTION: WHAT IS BRAINWAVE? (ANTHROPIC ACCORDION SPLIT)
+             ============================================================ -->
+        <section class="section editorial-framework-section" id="what-is-brainwave" style="padding-top: 100px; padding-bottom: 90px;">
             <div class="container">
                 
-                <!-- Top Header Row -->
-                <div class="about-lead-header">
-                    <div class="about-eyebrow-row">
-                        <span class="about-kicker">NEURAL ENGINEERING</span>
-                        <span class="about-meta-divider">/</span>
-                        <span class="about-tagline">EEG-BASED BRAIN–COMPUTER INTERFACES</span>
+                <div class="split-accordion-layout">
+                    <!-- Left Column: Title & Introduction -->
+                    <div class="split-col-intro">
+                        <h2 class="split-title">What is BrainWave?</h2>
+                        <p class="split-lead-para">
+                            BrainWave is Higgsion’s research initiative into non-invasive EEG-based neural interfaces, with a focus on speech-related neural activity and assistive communication. The system brings together electrophysiological acquisition, signal-quality assessment, spatiotemporal representation learning, and probabilistic decoding to investigate how neural activity associated with imagined speech can be translated into predefined, machine-interpretable outputs.
+                        </p>
+                        <p class="split-sub-para">
+                            The research addresses fundamental challenges in EEG-based neural decoding, including low signal-to-noise ratio, physiological artifacts, inter-subject variability, limited training data, and generalization across recording sessions.
+                        </p>
                     </div>
-                    <h2 class="about-display-heading">Decoding Neural Dynamics for Non-Invasive Communication</h2>
+
+                    <!-- Right Column: Accordion Rows -->
+                    <div class="split-col-accordion">
+                        
+                        <!-- Accordion Item 1 -->
+                        <div class="accordion-row-item active">
+                            <button class="accordion-header-btn" aria-expanded="true">
+                                <span class="accordion-item-title">Non-invasive neural acquisition</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-collapse-body">
+                                <p>
+                                    BrainWave investigates scalp-recorded electrical potentials using an eight-channel EEG research configuration. The workflow supports synchronized recording, electrode-contact assessment, reference management, and signal-quality monitoring during controlled speech-imagery experiments.
+                                </p>
+                                <p>
+                                    The pipeline investigates standardized montages, 24-bit analog front-end (AFE) amplification, and sub-millisecond event-marker synchronization while distinguishing nominal ADC resolution from effective resolution and monitoring ocular, muscular, and movement contamination.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 2 -->
+                        <div class="accordion-row-item">
+                            <button class="accordion-header-btn" aria-expanded="false">
+                                <span class="accordion-item-title">Signal processing &amp; experimental rigor</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-collapse-body">
+                                <p>
+                                    Preprocessing and analytical workflows characterize task-related neural activity while accounting for physiological interference and experimental variability. Methods include continuous channel quality inspection, transparent rejection criteria, temporal filtering, and event-aligned segmentation.
+                                </p>
+                                <p>
+                                    Spatial decomposition and artifact characterization techniques are evaluated directly against task-relevant neural epochs to ensure filters do not distort underlying electrophysiological dynamics. Trials are organized under BIDS-compatible structures.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 3 -->
+                        <div class="accordion-row-item">
+                            <button class="accordion-header-btn" aria-expanded="false">
+                                <span class="accordion-item-title">Neural representation &amp; decoding</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-collapse-body">
+                                <p>
+                                    Evaluating whether machine-learning models can identify predefined speech-imagery targets from multichannel EEG recordings. Candidate architectures include convolutional feature extractors, attention-based temporal modeling, and Conformer backbones.
+                                </p>
+                                <p>
+                                    Research focuses on probabilistic confidence calibration, cross-session generalization, and rigorous benchmarking against classical baselines (CSP, Riemannian classifiers) using strict participant-isolated evaluation partitions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 4 -->
+                        <div class="accordion-row-item">
+                            <button class="accordion-header-btn" aria-expanded="false">
+                                <span class="accordion-item-title">Research scope &amp; translational relevance</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-collapse-body">
+                                <p>
+                                    BrainWave currently focuses on investigating EEG correlates of speech imagery and the feasibility of decoding predefined target classes. Potential future applications include alternative communication, assistive human–computer interaction, and neural feedback for motor rehabilitation.
+                                </p>
+                                <p>
+                                    These applications require task-specific experimental evidence and formal clinical validation before translational deployment.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
-                <!-- Main Asymmetrical Grid -->
-                <div class="about-editorial-stage">
+            </div>
+        </section>
+
+        <script>
+        (function() {
+            function initAccordion() {
+                const rows = document.querySelectorAll('#what-is-brainwave .accordion-row-item');
+                rows.forEach(row => {
+                    const btn = row.querySelector('.accordion-header-btn');
+                    if (!btn) return;
+                    btn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const isActive = row.classList.contains('active');
+                        // Close other rows for single-expand behavior
+                        rows.forEach(r => {
+                            r.classList.remove('active');
+                            const b = r.querySelector('.accordion-header-btn');
+                            if (b) b.setAttribute('aria-expanded', 'false');
+                        });
+                        if (!isActive) {
+                            row.classList.add('active');
+                            btn.setAttribute('aria-expanded', 'true');
+                        }
+                    });
+                });
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initAccordion);
+            } else {
+                initAccordion();
+            }
+        })();
+        </script>
+
+        <!-- ============================================================
+             RESEARCH PILLARS: MINIMALIST EDITORIAL 4-COL LAYOUT
+             ============================================================ -->
+        <section class="section editorial-framework-section" id="research-pillars" style="padding-top: 100px; padding-bottom: 90px;">
+            <div class="container">
+                
+                <!-- Editorial Split Header (Title Left, Summary Right) -->
+                <div class="editorial-split-header">
+                    <div class="editorial-header-left">
+                        <span class="editorial-eyebrow">RESEARCH PILLARS</span>
+                        <h2 class="editorial-main-title">Scientific Domains &amp;<br>Translational Inquiry</h2>
+                    </div>
+                    <div class="editorial-header-right">
+                        <p class="editorial-lead-text">
+                            Investigating electrophysiological dynamics, non-invasive speech imagery decoding, and machine-learning representations through rigorous, reproducible scientific pipelines.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Top Hairline Divider -->
+                <hr class="editorial-hairline">
+
+                <!-- 4-Column Clean Borderless Editorial Grid -->
+                <div class="editorial-quad-grid">
                     
-                    <!-- Left: Instrumented Specimen Viewport -->
-                    <div class="specimen-viewport-card">
-                        <div class="specimen-viewport-inner">
-                            <img src="assets/brain11.jpg" alt="Neural cortical illustration" class="specimen-img">
-                            
-                            <!-- Precision Telemetry Accents -->
-                            <div class="viewport-hud-top">
-                                <span class="hud-mono">FIG. 01 // CORTICAL MAPPING</span>
-                                <span class="hud-status-dot"></span>
-                            </div>
-                            <div class="viewport-hud-bottom">
-                                <div class="hud-data-cell">
-                                    <span class="hud-lbl">LATENCY</span>
-                                    <span class="hud-val">&lt; 14 ms</span>
-                                </div>
-                                <div class="hud-data-cell">
-                                    <span class="hud-lbl">CHANNELS</span>
-                                    <span class="hud-val">8-CH ACTIVE</span>
-                                </div>
-                                <div class="hud-data-cell">
-                                    <span class="hud-lbl">SIGNAL</span>
-                                    <span class="hud-val">µV-SCALE</span>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Column 01 -->
+                    <div class="editorial-column-item">
+                        <h3 class="editorial-col-title">Neural Signal Characterization</h3>
+                        <p class="editorial-col-desc">
+                            Investigating the temporal and spatial structure of EEG activity associated with speech imagery, including physiological artifacts and inter-subject variability.
+                        </p>
+                        <a href="research.html#vectors-part-1" class="editorial-link-action">
+                            <span>Explore research</span> &rarr;
+                        </a>
                     </div>
 
-                    <!-- Right: Editorial Narrative & Core Principles -->
-                    <div class="about-content-column">
-                        <p class="about-lead-statement">
-                            BrainWave is Higgsion’s research initiative into non-invasive neural interfaces for decoding speech-related neural activity and translating it into structured digital outputs. By combining electroencephalography (EEG), signal processing, spatiotemporal representation learning, and probabilistic decoding, BrainWave investigates whether internally generated linguistic intent can be mapped to machine-interpretable representations without surgical implantation.
+                    <!-- Column 02 -->
+                    <div class="editorial-column-item">
+                        <h3 class="editorial-col-title">Adaptive Neural Decoding</h3>
+                        <p class="editorial-col-desc">
+                            Developing machine-learning representations that distinguish task-related neural activity from noise while addressing subject-specific and session-dependent signal variation.
                         </p>
-                        <p class="about-secondary-body">
-                            The research focuses on the neural correlates of imagined speech, robust feature extraction from low-amplitude electrophysiological signals, and adaptive decoding across trials, sessions, and individuals. The long-term objective is to develop an experimentally validated communication interface for assistive technologies and human–computer interaction, with translational applications subject to clinical and technical validation.
+                        <a href="research.html#vectors-part-1" class="editorial-link-action">
+                            <span>Explore research</span> &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Column 03 -->
+                    <div class="editorial-column-item">
+                        <h3 class="editorial-col-title">Assistive Communication</h3>
+                        <p class="editorial-col-desc">
+                            Exploring neural interfaces for alternative communication, digital interaction, and future assistive applications for individuals with speech or motor impairments.
                         </p>
+                        <a href="research.html#vectors-part-2" class="editorial-link-action">
+                            <span>Explore research</span> &rarr;
+                        </a>
+                    </div>
 
-                        <!-- Structured 3-Pillar Grid -->
-                        <div class="about-pillars-grid">
-                            <div class="about-pillar-card">
-                                <span class="pillar-num">01</span>
-                                <h4 class="pillar-title">Neural Signal Characterization</h4>
-                                <p class="pillar-desc">Investigating the temporal and spatial structure of EEG activity associated with speech imagery, including physiological artifacts and inter-subject variability.</p>
-                            </div>
-                            <div class="about-pillar-card">
-                                <span class="pillar-num">02</span>
-                                <h4 class="pillar-title">Adaptive Neural Decoding</h4>
-                                <p class="pillar-desc">Developing machine-learning representations that distinguish task-related neural activity from noise while addressing subject-specific and session-dependent signal variation.</p>
-                            </div>
-                            <div class="about-pillar-card">
-                                <span class="pillar-num">03</span>
-                                <h4 class="pillar-title">Assistive Communication Research</h4>
-                                <p class="pillar-desc">Exploring neural interfaces for alternative communication, digital interaction, and future assistive applications for people with speech or motor impairments.</p>
-                            </div>
-                        </div>
-
+                    <!-- Column 04 -->
+                    <div class="editorial-column-item">
+                        <h3 class="editorial-col-title">Closed-Loop Neuro-Monitoring</h3>
+                        <p class="editorial-col-desc">
+                            Investigating continuous spectral analysis, longitudinal signal stability, and low-latency feedback architectures for real-time electrophysiological assessment.
+                        </p>
+                        <a href="research.html#vectors-part-2" class="editorial-link-action">
+                            <span>Explore research</span> &rarr;
+                        </a>
                     </div>
 
                 </div>
+
+                <!-- Bottom Hairline Divider -->
+                <hr class="editorial-hairline" style="margin-top: 50px;">
+
             </div>
         </section>
 
