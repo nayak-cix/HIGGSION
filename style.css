@@ -6892,3 +6892,179 @@ header.navbar,
     background: rgba(255, 255, 255, 0.6) !important;
     border-color: rgba(60, 45, 25, 0.25) !important;
 }
+
+/* ==========================================================================
+   INTERMEDIATE SECTIONS: TECH PILLARS & SIGNAL PIPELINE
+   ========================================================================== */
+
+.tech-pillars-section,
+.signal-pipeline-section {
+    background-color: #F3EBDD !important;
+    padding: 90px 0 !important;
+    border-top: 1px solid rgba(60, 45, 25, 0.08) !important;
+}
+
+.section-lead-header {
+    margin-bottom: 48px !important;
+}
+
+.section-eyebrow-row {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    font-family: var(--font-mono, monospace) !important;
+    font-size: 0.72rem !important;
+    letter-spacing: 1.6px !important;
+    text-transform: uppercase !important;
+    margin-bottom: 12px !important;
+}
+
+.section-kicker {
+    color: #000000 !important;
+    font-weight: 700 !important;
+}
+
+.section-meta-divider {
+    color: rgba(60, 45, 25, 0.4) !important;
+}
+
+.section-tagline {
+    color: rgba(60, 45, 25, 0.7) !important;
+}
+
+.section-summary-lead {
+    font-size: 1.1rem !important;
+    color: rgba(0, 0, 0, 0.8) !important;
+    margin-top: 12px !important;
+    max-width: 760px !important;
+}
+
+/* 4-Pillars Grid */
+.pillars-quad-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 24px !important;
+}
+
+.pillar-feature-card {
+    background: #ECE7DE !important;
+    border: 1px solid rgba(120, 92, 50, 0.12) !important;
+    border-radius: 14px !important;
+    padding: 28px 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease !important;
+}
+
+.pillar-feature-card:hover {
+    transform: translateY(-4px) !important;
+    border-color: rgba(120, 92, 50, 0.35) !important;
+    box-shadow: 0 14px 32px rgba(60, 45, 25, 0.12) !important;
+}
+
+.pillar-card-top {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 18px !important;
+}
+
+.pillar-index {
+    font-family: var(--font-editorial, 'Big Shoulders Display'), sans-serif !important;
+    font-size: 1.8rem !important;
+    font-weight: 800 !important;
+    color: #000000 !important;
+    line-height: 1 !important;
+}
+
+.pillar-tag-badge {
+    font-family: var(--font-mono, monospace) !important;
+    font-size: 0.65rem !important;
+    letter-spacing: 1px !important;
+    background: rgba(60, 45, 25, 0.08) !important;
+    padding: 3px 8px !important;
+    border-radius: 4px !important;
+    color: #000000 !important;
+}
+
+.pillar-card-title {
+    font-family: var(--font-heading), sans-serif !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    margin: 0 0 12px 0 !important;
+    line-height: 1.25 !important;
+}
+
+.pillar-card-text {
+    font-size: 0.92rem !important;
+    line-height: 1.55 !important;
+    color: rgba(0, 0, 0, 0.8) !important;
+    margin: 0 0 20px 0 !important;
+    flex-grow: 1 !important;
+}
+
+.pillar-spec-strip {
+    font-family: var(--font-mono, monospace) !important;
+    font-size: 0.72rem !important;
+    font-weight: 600 !important;
+    color: #000000 !important;
+    border-top: 1px solid rgba(60, 45, 25, 0.12) !important;
+    padding-top: 14px !important;
+}
+
+/* Pipeline Flow Grid */
+.pipeline-flow-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 20px !important;
+}
+
+.pipeline-step-box {
+    background: #ECE7DE !important;
+    border: 1px solid rgba(120, 92, 50, 0.12) !important;
+    border-radius: 12px !important;
+    padding: 24px 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative !important;
+}
+
+.pipeline-step-num {
+    font-family: var(--font-mono, monospace) !important;
+    font-size: 0.72rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.2px !important;
+    color: #F5A623 !important;
+    margin-bottom: 12px !important;
+}
+
+.pipeline-step-title {
+    font-family: var(--font-heading), sans-serif !important;
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    margin: 0 0 10px 0 !important;
+}
+
+.pipeline-step-desc {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    color: rgba(0, 0, 0, 0.75) !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 1024px) {
+    .pillars-quad-grid,
+    .pipeline-flow-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .pillars-quad-grid,
+    .pipeline-flow-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
