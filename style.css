@@ -8229,3 +8229,38 @@ header.navbar,
         font-size: 2.2rem !important;
     }
 }
+
+/* ==========================================================================
+   HOMEPAGE: ENGINEERING STACK CARDS ACCENT COLOR (#D2C3E1)
+   ========================================================================== */
+
+#software.section .software-card,
+#engineering-stack .software-card,
+.software-card {
+    background-color: #D2C3E1 !important;
+    background: #D2C3E1 !important;
+}
+
+/* Engineering Stack Cards Background Color - #bcd1ca */
+section[id*="software"] div[class*="card"],
+section[id*="stack"] div[class*="card"],
+section[id*="engineering"] div[class*="card"],
+.software-card,
+.stack-card,
+.arch-card,
+.software-grid > div {
+    background: #bcd1ca !important;
+    background-color: #bcd1ca !important;
+}
+
+/* Update Engineering Stack Cards to #d4a27f */
+section[id*="software"] div[class*="card"],
+section[id*="stack"] div[class*="card"],
+section[id*="engineering"] div[class*="card"],
+.software-card,
+.stack-card,
+.arch-card,
+.software-grid > div {
+    background: #d4a27f !important;
+    background-color: #d4a27f !important;
+}
