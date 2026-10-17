@@ -212,7 +212,7 @@
                     <span class="section-num">01 // HARDWARE ARCHITECTURE</span>
                     <h2 class="section-heading">BrainWave 8-Channel EEG System</h2>
                     <p class="section-summary">
-                        Engineered for non-invasive intent capture with active differential shielding and research-grade micro-volt signal fidelity.
+                        An eight-channel EEG acquisition platform under development for controlled investigations of speech-related neural activity. The system is intended to support synchronized electrophysiological recording, electrode-contact assessment, signal-quality monitoring, and reproducible transfer of neural data to downstream analysis pipelines.
                     </p>
                 </div>
 
@@ -226,31 +226,31 @@
                             <div class="card-meta">HARDWARE MONTAGE &bull; RESEARCH INSTRUMENT</div>
                             <h3 class="product-card-title">BrainWave 8-Ch Headset</h3>
                             <p class="product-card-desc">
-                                A lightweight, clinical-grade dry/wet-compatible electrode montage targeting bilateral temporal and articulatory motor areas (including F3, C3, T3, Pz, F4, C4, T4, Oz) to isolate covert speech intention before neuromuscular attenuation.
+                                The proposed acquisition configuration integrates scalp electrodes, an EEG analog front-end, digitization, and embedded data acquisition for multichannel electrophysiological research. Electrode placement, reference configuration, input characteristics, and recording protocols must be documented explicitly to support reproducibility and interpretation of EEG measurements.
                             </p>
 
                             <div class="specs-mini-grid">
                                 <div class="mini-spec-item">
                                     <span class="spec-label">Electrodes</span>
-                                    <strong class="spec-val">8 Channels (Active differential)</strong>
+                                    <strong class="spec-val">8 Channels (Montage &amp; reference to be documented)</strong>
                                 </div>
                                 <div class="mini-spec-item">
                                     <span class="spec-label">Sampling Rate</span>
-                                    <strong class="spec-val">1000 Hz / Channel</strong>
+                                    <strong class="spec-val">Under characterization</strong>
                                 </div>
                                 <div class="mini-spec-item">
                                     <span class="spec-label">Quantization</span>
-                                    <strong class="spec-val">24-bit Low-Noise ADC</strong>
+                                    <strong class="spec-val">24-bit ADC (Nominal resolution)</strong>
                                 </div>
                                 <div class="mini-spec-item">
-                                    <span class="spec-label">Noise Floor</span>
-                                    <strong class="spec-val">&lt; 0.8 µV RMS (0.5–45 Hz)</strong>
+                                    <span class="spec-label">Input-Referred Noise</span>
+                                    <strong class="spec-val">Under characterization</strong>
                                 </div>
                             </div>
 
                             <div class="feature-status-list">
-                                <div class="status-pill-row"><span class="badge badge-validated">IMPLEMENTED</span> 8-Channel Active Shielding &amp; Real-Time Wireless Telemetry</div>
-                                <div class="status-pill-row"><span class="badge badge-ongoing">RESEARCH PROTOCOL</span> Covert Speech &amp; Motor Phoneme Decoding</div>
+                                <div class="status-pill-row"><span class="badge badge-ongoing">IMPLEMENTATION</span> Hardware architecture under active development</div>
+                                <div class="status-pill-row"><span class="badge badge-ongoing">RESEARCH OBJECTIVE</span> Controlled EEG acquisition and speech-imagery decoding research</div>
                             </div>
 
                             <div class="card-action-row" style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap;">
@@ -286,28 +286,28 @@
                             <span class="stream-domain-label">TELEMETRY &amp; SPECTRA</span>
                             <div class="stream-status-pill status-prototype">
                                 <span class="status-pulse-dot"></span>
-                                <span>PROTOTYPE SUITE</span>
+                                <span>IN DEVELOPMENT</span>
                             </div>
                         </div>
 
                         <div class="stream-col-content">
                             <h3 class="stream-item-title">Research Platform</h3>
                             <p class="stream-item-desc">
-                                Interactive signal-monitoring software providing multi-channel real-time visualizers, fast ICA artifact rejection, frequency-band decomposition, and experimental event marker synchronization.
+                                The BrainWave Research Platform is designed to support inspection, synchronization, and analysis of multichannel EEG recordings. Its research workflow encompasses signal visualization, event-aligned segmentation, spectral analysis, channel-quality assessment, and artifact characterization to facilitate reproducible electrophysiological experiments.
                             </p>
 
                             <div class="stream-specs-table">
                                 <div class="stream-spec-cell">
-                                    <span class="cell-label">SIGNAL PIPELINE</span>
-                                    <span class="cell-val">Spatial Laplacian &amp; FastICA Ocular Rejection</span>
+                                    <span class="cell-label">SIGNAL PROCESSING</span>
+                                    <span class="cell-val">Temporal filtering, spectral analysis, and artifact assessment</span>
                                 </div>
                                 <div class="stream-spec-cell">
-                                    <span class="cell-label">TELEMETRY PROTOCOL</span>
-                                    <span class="cell-val">Lab Streaming Layer (LSL) Native Sync</span>
+                                    <span class="cell-label">DATA SYNCHRONIZATION</span>
+                                    <span class="cell-val">Event markers, recording timestamps, and synchronized data streams</span>
                                 </div>
                                 <div class="stream-spec-cell">
-                                    <span class="cell-label">MONITORING</span>
-                                    <span class="cell-val">Continuous Impedance &lt; 20 kΩ &amp; Raw Microvolts</span>
+                                    <span class="cell-label">SIGNAL QUALITY</span>
+                                    <span class="cell-val">Channel-level signal inspection, electrode-contact monitoring, and recording-quality assessment</span>
                                 </div>
                             </div>
 
@@ -324,36 +324,36 @@
                         <div class="stream-col-meta">
                             <span class="stream-index-num">02</span>
                             <span class="stream-domain-label">CORE RUNTIME &amp; ENDPOINTS</span>
-                            <div class="stream-status-pill status-stable">
+                            <div class="stream-status-pill status-prototype">
                                 <span class="status-pulse-dot"></span>
-                                <span>STABLE RUNTIME</span>
+                                <span>IN DEVELOPMENT</span>
                             </div>
                         </div>
 
                         <div class="stream-col-content">
                             <h3 class="stream-item-title">SDK &amp; Streaming API Suite</h3>
                             <p class="stream-item-desc">
-                                Cross-platform C++17 and Python native client bindings alongside WebSocket and gRPC streaming services designed to deliver low-overhead neural state inferences to external assistive systems.
+                                The BrainWave SDK is intended to provide structured access to EEG recordings, acquisition metadata, event annotations, and downstream neural-decoding interfaces. Its engineering priorities include explicit data contracts, timestamp integrity, bounded buffering, transport reliability, and interoperability with scientific computing environments.
                             </p>
 
                             <div class="stream-specs-table">
                                 <div class="stream-spec-cell">
-                                    <span class="cell-label">LANGUAGE BINDINGS</span>
-                                    <span class="cell-val">C++17 Core Engine, Python 3.10+ Wheel</span>
+                                    <span class="cell-label">DATA INTERFACES</span>
+                                    <span class="cell-val">Structured data schemas, acquisition metadata contracts, and scientific computing interfaces</span>
                                 </div>
                                 <div class="stream-spec-cell">
-                                    <span class="cell-label">NETWORK PROTOCOL</span>
-                                    <span class="cell-val">gRPC Remote Procedure Calls, WebSocket (sub-15ms)</span>
+                                    <span class="cell-label">STREAMING &amp; TRANSPORT</span>
+                                    <span class="cell-val">Bounded buffer management, packet-integrity validation, and reconnection protocols</span>
                                 </div>
                                 <div class="stream-spec-cell">
-                                    <span class="cell-label">BUFFER ARCHITECTURE</span>
-                                    <span class="cell-val">Lockless Ring Buffers, Zero-Copy NumPy / PyTorch</span>
+                                    <span class="cell-label">RUNTIME PERFORMANCE</span>
+                                    <span class="cell-val">Not yet characterized</span>
                                 </div>
                             </div>
 
                             <div class="stream-action-row">
                                 <a href="software-sdk.html" class="row-pill-btn">
-                                    <span>Explore SDK &amp; Endpoints &rarr;</span>
+                                    <span>Explore SDK Documentation &rarr;</span>
                                 </a>
                             </div>
                         </div>
@@ -406,37 +406,38 @@
                             <span class="stream-domain-label">BENCHMARK REPOSITORY</span>
                             <div class="stream-status-pill status-data">
                                 <span class="status-pulse-dot"></span>
-                                <span>DATA COLLECTION ACTIVE</span>
+                                <span>IN DEVELOPMENT</span>
                             </div>
                         </div>
 
                         <div class="stream-col-content">
                             <h3 class="stream-item-title">Standardized Neural Dataset</h3>
                             <p class="stream-item-desc">
-                                Multi-subject 8-channel EEG corpus paired with synchronized vocalization, covert articulatory rehearsal, and motor intent cues to establish open benchmarks for assistive speech interfaces.
+                                The BrainWave dataset initiative aims to support reproducible research on EEG correlates of speech imagery through documented experimental protocols, standardized metadata, and leakage-resistant evaluation. Dataset development prioritizes consistent task definitions, signal-quality documentation, participant privacy, and transparent reporting of methodological limitations.
                             </p>
 
                             <div class="stream-specs-table">
                                 <div class="stream-spec-cell">
-                                    <span class="cell-label">COHORT TARGET</span>
-                                    <span class="cell-val">50–100 Human Participants (Target in Progress)</span>
+                                    <span class="cell-label">EXPERIMENTAL DESIGN</span>
+                                    <span class="cell-val">Participant eligibility, speech-imagery task protocols, electrode montages, and event annotations (recruitment and acquisition targets under development)</span>
                                 </div>
                                 <div class="stream-spec-cell">
-                                    <span class="cell-label">FORMAT COMPLIANCE</span>
-                                    <span class="cell-val">Brain Imaging Data Structure (BIDS) / HDF5 / EDF</span>
+                                    <span class="cell-label">DATA ORGANIZATION</span>
+                                    <span class="cell-val">BIDS-compatible EEG data structuring, standardized metadata schemas, quality-control logging, and independent evaluation partitions</span>
                                 </div>
                                 <div class="stream-spec-cell">
-                                    <span class="cell-label">SIGNAL SPECIFICATION</span>
-                                    <span class="cell-val">1000 Hz Uncompressed &bull; 24-bit AFE &bull; &lt; 0.8 µV RMS</span>
+                                    <span class="cell-label">ETHICS &amp; DATA GOVERNANCE</span>
+                                    <span class="cell-val">Informed consent procedures, de-identification protocols, and controlled access governance for research dissemination</span>
                                 </div>
                             </div>
 
                             <div class="stream-action-row">
                                 <a href="software-dataset.html" class="row-pill-btn">
-                                    <span>Dataset Access &amp; Protocol Guidelines &rarr;</span>
+                                    <span>Explore Dataset Specifications &rarr;</span>
                                 </a>
                             </div>
                         </div>
+                    </div>
                     </div>
 
                 </div>
@@ -451,6 +452,9 @@
                     <div class="matrix-title-group">
                         <span class="matrix-eyebrow">SYSTEM VERIFICATION</span>
                         <h2 class="anthropic-matrix-title">Ecosystem Integration &amp; Readiness</h2>
+                        <p style="margin: 12px 0 0 0; color: #000000; font-size: 1.05rem; line-height: 1.6; max-width: 900px;">
+                            BrainWave is being developed as a modular research ecosystem spanning EEG acquisition, signal analysis, software interfaces, neural-decoding models, and dataset management. This section documents the interfaces between system components, their implementation status, and the evidence available to support their technical capabilities. Functional integration and scientific validation are reported separately.
+                        </p>
                     </div>
                     <div class="matrix-search-decor">
                         <svg class="decor-search-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8">
@@ -469,84 +473,100 @@
                         <div class="th-col th-system">SYSTEM / LAYER</div>
                         <div class="th-col th-interface">INTERFACE &amp; PROTOCOL</div>
                         <div class="th-col th-specs">TECHNICAL SPECIFICATION</div>
-                        <div class="th-col th-status">READINESS</div>
-                        <div class="th-col th-action">LINK</div>
+                        <div class="th-col th-status">IMPLEMENTATION STATUS</div>
+                        <div class="th-col th-action">DOCUMENTATION</div>
                     </div>
 
-                    <!-- Row 1: Hardware -->
+                    <!-- Row 1: EEG Acquisition Hardware -->
                     <a href="hardware-8ch.html" class="anthropic-tr-row">
                         <div class="td-col td-system">
-                            <span class="system-name">BrainWave 8-Ch System</span>
-                            <span class="system-sub">Physical Sensory Montage</span>
+                            <span class="system-name">EEG Acquisition Hardware</span>
+                            <span class="system-sub">Sensory Headset &amp; AFE</span>
                         </div>
-                        <div class="td-col td-interface">BLE 5.2 / USB-C Direct Serial</div>
-                        <div class="td-col td-specs">8-Channel active differential shielding, 1000 Hz / channel, 24-bit ADC, &lt; 0.8 µV RMS noise floor</div>
+                        <div class="td-col td-interface">Under characterization</div>
+                        <div class="td-col td-specs">Eight recording channels; nominal 24-bit ADC front-end; sampling frequency, reference configuration, and input noise floor under characterization</div>
                         <div class="td-col td-status">
-                            <span class="matrix-badge badge-working">Working Hardware</span>
+                            <span class="matrix-badge badge-working">IN DEVELOPMENT</span>
                         </div>
                         <div class="td-col td-action">
                             <span class="anthropic-link-text">Specifications &rarr;</span>
                         </div>
                     </a>
 
-                    <!-- Row 2: Research Platform -->
+                    <!-- Row 2: Signal Processing Pipeline -->
+                    <a href="software-research.html" class="anthropic-tr-row">
+                        <div class="td-col td-system">
+                            <span class="system-name">Signal Processing Pipeline</span>
+                            <span class="system-sub">Signal Conditioning</span>
+                        </div>
+                        <div class="td-col td-interface">Pipeline Data Schema</div>
+                        <div class="td-col td-specs">Temporal filtering, event-aligned segmentation, channel-quality assessment, and baseline artifact characterization procedures</div>
+                        <div class="td-col td-status">
+                            <span class="matrix-badge badge-proto">IN DEVELOPMENT</span>
+                        </div>
+                        <div class="td-col td-action">
+                            <span class="anthropic-link-text">Pipeline Docs &rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Row 3: Research Platform -->
                     <a href="software-research.html" class="anthropic-tr-row">
                         <div class="td-col td-system">
                             <span class="system-name">Research Platform</span>
-                            <span class="system-sub">Telemetry &amp; Signal Suite</span>
+                            <span class="system-sub">Analysis &amp; Inspection</span>
                         </div>
-                        <div class="td-col td-interface">Lab Streaming Layer (LSL) Native</div>
-                        <div class="td-col td-specs">Continuous 8-channel impedance tracking (&lt; 20 kΩ), FastICA ocular artifact rejection</div>
+                        <div class="td-col td-interface">Data Synchronization API</div>
+                        <div class="td-col td-specs">Signal inspection visualizers, event-marker tracking, spectral analysis tools, and preliminary data export workflows</div>
                         <div class="td-col td-status">
-                            <span class="matrix-badge badge-proto">Operational Prototype</span>
+                            <span class="matrix-badge badge-proto">IN DEVELOPMENT</span>
                         </div>
                         <div class="td-col td-action">
                             <span class="anthropic-link-text">Platform &rarr;</span>
                         </div>
                     </a>
 
-                    <!-- Row 3: Core SDK & Streaming API -->
+                    <!-- Row 4: SDK & Data Transport -->
                     <a href="software-sdk.html" class="anthropic-tr-row">
                         <div class="td-col td-system">
-                            <span class="system-name">Core SDK &amp; Streaming API</span>
-                            <span class="system-sub">Runtime &amp; Client Bindings</span>
+                            <span class="system-name">SDK &amp; Data Transport</span>
+                            <span class="system-sub">Runtime Interfaces</span>
                         </div>
-                        <div class="td-col td-interface">gRPC &amp; WebSocket (sub-15ms)</div>
-                        <div class="td-col td-specs">C++17 native core with lockless ring buffers, Python 3.10+ bindings for PyTorch &amp; NumPy</div>
+                        <div class="td-col td-interface">Transport Protocols (In Dev)</div>
+                        <div class="td-col td-specs">Structured data contracts, acquisition metadata handling, bounded buffering; latency and throughput benchmarks not yet characterized</div>
                         <div class="td-col td-status">
-                            <span class="matrix-badge badge-stable">Stable Runtime</span>
+                            <span class="matrix-badge badge-stable">IN DEVELOPMENT</span>
                         </div>
                         <div class="td-col td-action">
                             <span class="anthropic-link-text">SDK Docs &rarr;</span>
                         </div>
                     </a>
 
-                    <!-- Row 4: Neural Models -->
+                    <!-- Row 5: Neural-Decoding Models -->
                     <a href="software-models.html" class="anthropic-tr-row">
                         <div class="td-col td-system">
-                            <span class="system-name">Neural Decoders &amp; Apps</span>
-                            <span class="system-sub">Speech Intent Classifiers</span>
+                            <span class="system-name">Neural-Decoding Models</span>
+                            <span class="system-sub">Intent Classifiers</span>
                         </div>
-                        <div class="td-col td-interface">PyTorch / TorchScript / ONNX</div>
-                        <div class="td-col td-specs">Conformer-128 spatiotemporal backbone, 42-phoneme articulatory likelihood estimation</div>
+                        <div class="td-col td-interface">Model Inference Interface</div>
+                        <div class="td-col td-specs">Convolutional and attention-based architectures under investigation for speech-imagery feature representation; decoding accuracy subject to experimental validation</div>
                         <div class="td-col td-status">
-                            <span class="matrix-badge badge-eval">Exploratory Model</span>
+                            <span class="matrix-badge badge-eval">PLANNED</span>
                         </div>
                         <div class="td-col td-action">
                             <span class="anthropic-link-text">Architecture &rarr;</span>
                         </div>
                     </a>
 
-                    <!-- Row 5: Neural Dataset -->
+                    <!-- Row 6: Dataset & Benchmarking -->
                     <a href="software-dataset.html" class="anthropic-tr-row">
                         <div class="td-col td-system">
-                            <span class="system-name">Standardized Dataset</span>
-                            <span class="system-sub">Benchmark Corpus</span>
+                            <span class="system-name">Dataset &amp; Benchmarking</span>
+                            <span class="system-sub">Corpus &amp; Partitions</span>
                         </div>
-                        <div class="td-col td-interface">BIDS Standards / HDF5 / CSV</div>
-                        <div class="td-col td-specs">Target: 50–100 adult subjects; synchronized overt and covert imagined speech sequences</div>
+                        <div class="td-col td-interface">BIDS / Standard Schemas</div>
+                        <div class="td-col td-specs">Standardized experimental task protocols, quality-control criteria, and leak-resistant evaluation partitions under active development</div>
                         <div class="td-col td-status">
-                            <span class="matrix-badge badge-target">Target: 50–100 Subjects</span>
+                            <span class="matrix-badge badge-target">IN DEVELOPMENT</span>
                         </div>
                         <div class="td-col td-action">
                             <span class="anthropic-link-text">Dataset &rarr;</span>

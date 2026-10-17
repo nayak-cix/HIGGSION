@@ -7579,3 +7579,59 @@ header.navbar,
         padding: 24px 0 !important;
     }
 }
+
+/* ==========================================================================
+   PRODUCTS.HTML SOFTWARE STREAM REPAIR & ALIGNMENT
+   ========================================================================== */
+
+/* Fix anchor scroll offset so sticky navbar does not obscure section tops */
+.software-stream-block {
+    scroll-margin-top: 100px !important;
+}
+
+/* Ensure specification box wraps cleanly and does not distort */
+.stream-specs-table {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 20px !important;
+    width: 100% !important;
+    max-width: 960px !important;
+    background: #E4D8C2 !important;
+    border: 1px solid rgba(60, 45, 25, 0.12) !important;
+    border-radius: 10px !important;
+    padding: 20px 24px !important;
+    margin-bottom: 24px !important;
+    box-sizing: border-box !important;
+}
+
+.stream-spec-cell {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+    word-break: break-word !important;
+}
+
+.stream-spec-cell .cell-label {
+    font-family: var(--font-mono, monospace) !important;
+    font-size: 0.65rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.2px !important;
+    color: rgba(60, 45, 25, 0.75) !important;
+    text-transform: uppercase !important;
+}
+
+.stream-spec-cell .cell-val {
+    font-family: var(--font-ui), sans-serif !important;
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+    color: #111111 !important;
+    font-weight: 500 !important;
+}
+
+/* Responsive adjustment so multi-word cells do not squash horizontally */
+@media (max-width: 1024px) {
+    .stream-specs-table {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+}
