@@ -7273,3 +7273,253 @@ header.navbar,
         font-size: 1.8rem !important;
     }
 }
+
+/* ==========================================================================
+   SECTIONS: TRANSLATIONAL IMPACT & RESEARCH RIGOR
+   ========================================================================== */
+
+/* 1. Translational Impact Section */
+.translational-impact-section {
+    background-color: #F3EBDD !important;
+    padding: 100px 0 !important;
+    border-top: 1px solid rgba(60, 45, 25, 0.08) !important;
+}
+
+.impact-triad-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 28px !important;
+    margin-top: 16px !important;
+}
+
+.impact-card {
+    background: #ECE7DE !important;
+    border: 1px solid rgba(120, 92, 50, 0.12) !important;
+    border-radius: 18px !important;
+    padding: 36px 30px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    box-shadow: 0 12px 30px rgba(60, 45, 25, 0.08) !important;
+    transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease, border-color 0.28s ease !important;
+}
+
+.impact-card:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgba(120, 92, 50, 0.35) !important;
+    box-shadow: 0 18px 45px rgba(60, 45, 25, 0.15) !important;
+}
+
+.impact-card-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 20px !important;
+}
+
+.impact-roman-num {
+    font-family: var(--font-editorial, 'Big Shoulders Display'), sans-serif !important;
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+    color: #000000 !important;
+    line-height: 1 !important;
+}
+
+.impact-badge {
+    font-family: var(--font-mono, monospace) !important;
+    font-size: 0.68rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+    background: rgba(60, 45, 25, 0.08) !important;
+    color: #000000 !important;
+    padding: 4px 10px !important;
+    border-radius: 9999px !important;
+    border: 1px solid rgba(60, 45, 25, 0.12) !important;
+}
+
+.impact-card-title {
+    font-family: var(--font-heading), sans-serif !important;
+    font-size: 1.45rem !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    line-height: 1.25 !important;
+    margin: 0 0 14px 0 !important;
+}
+
+.impact-card-desc {
+    font-size: 0.96rem !important;
+    line-height: 1.65 !important;
+    color: rgba(0, 0, 0, 0.82) !important;
+    margin: 0 0 28px 0 !important;
+    flex-grow: 1 !important;
+}
+
+.impact-metrics-strip {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 16px !important;
+    border-top: 1px solid rgba(60, 45, 25, 0.12) !important;
+    padding-top: 18px !important;
+}
+
+.metric-stat-item {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2px !important;
+}
+
+.metric-stat-item .stat-num {
+    font-family: var(--font-mono, monospace) !important;
+    font-size: 1.05rem !important;
+    font-weight: 800 !important;
+    color: #000000 !important;
+}
+
+.metric-stat-item .stat-lbl {
+    font-family: var(--font-mono, monospace) !important;
+    font-size: 0.62rem !important;
+    letter-spacing: 0.8px !important;
+    color: rgba(60, 45, 25, 0.7) !important;
+    text-transform: uppercase !important;
+}
+
+/* 2. Research Rigor Section */
+.research-rigor-section {
+    background-color: #F3EBDD !important;
+    padding: 60px 0 110px 0 !important;
+    border-top: 1px solid rgba(60, 45, 25, 0.08) !important;
+}
+
+.rigor-banner-frame {
+    background: #EBE5DB !important;
+    border: 1px solid rgba(120, 92, 50, 0.18) !important;
+    border-radius: 24px !important;
+    padding: clamp(36px, 5vw, 64px) !important;
+    display: grid !important;
+    grid-template-columns: 1.35fr 1fr !important;
+    gap: clamp(36px, 5vw, 64px) !important;
+    align-items: center !important;
+    box-shadow: 0 16px 40px rgba(60, 45, 25, 0.08) !important;
+}
+
+.rigor-eyebrow {
+    font-family: var(--font-mono, monospace) !important;
+    font-size: 0.72rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 1.8px !important;
+    color: #F5A623 !important;
+    text-transform: uppercase !important;
+    display: block !important;
+    margin-bottom: 12px !important;
+}
+
+.rigor-heading {
+    font-family: var(--font-display, var(--font-heading)), sans-serif !important;
+    font-size: clamp(2.2rem, 3.8vw, 3.2rem) !important;
+    font-weight: 800 !important;
+    color: #000000 !important;
+    line-height: 1.15 !important;
+    margin: 0 0 16px 0 !important;
+    letter-spacing: -0.4px !important;
+}
+
+.rigor-body {
+    font-size: 1.05rem !important;
+    line-height: 1.65 !important;
+    color: rgba(0, 0, 0, 0.8) !important;
+    margin: 0 0 28px 0 !important;
+}
+
+.rigor-checklist {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    margin-bottom: 36px !important;
+}
+
+.check-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    font-size: 0.95rem !important;
+    color: #000000 !important;
+    font-weight: 500 !important;
+}
+
+.check-icon {
+    width: 20px !important;
+    height: 20px !important;
+    color: #F5A623 !important;
+    flex-shrink: 0 !important;
+}
+
+.rigor-action-row {
+    display: flex !important;
+    gap: 16px !important;
+    flex-wrap: wrap !important;
+}
+
+.rigor-stats-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+}
+
+.rigor-stat-card {
+    background: #F3EBDD !important;
+    border: 1px solid rgba(120, 92, 50, 0.15) !important;
+    border-radius: 14px !important;
+    padding: 22px 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+    box-shadow: 0 8px 20px rgba(60, 45, 25, 0.05) !important;
+}
+
+.rigor-card-num {
+    font-family: var(--font-editorial, 'Big Shoulders Display'), sans-serif !important;
+    font-size: 2.4rem !important;
+    font-weight: 900 !important;
+    color: #000000 !important;
+    line-height: 1 !important;
+}
+
+.rigor-card-label {
+    font-family: var(--font-heading), sans-serif !important;
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+}
+
+.rigor-card-sub {
+    font-size: 0.82rem !important;
+    color: rgba(60, 45, 25, 0.75) !important;
+    font-family: var(--font-mono, monospace) !important;
+}
+
+@media (max-width: 1024px) {
+    .impact-triad-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .rigor-banner-frame {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ==========================================================================
+   FOOTER HIGGSION LOGO STYLING
+   ========================================================================== */
+
+.ref-footer-logo-img {
+    height: 38px !important;
+    width: auto !important;
+    max-width: 44px !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+
+.ref-footer-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+}
