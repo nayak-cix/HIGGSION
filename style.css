@@ -6446,3 +6446,395 @@ footer.site-footer.gsap-style-footer {
 .site-footer.gsap-style-footer .footer-dots-pattern {
     background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px) !important;
 }
+
+/* ==========================================================================
+   REFERENCE-STYLE HERO LANDING SECTION & TOP PILL NAVBAR
+   ========================================================================== */
+
+/* Top Floating Pill Navbar */
+header.navbar,
+.navbar {
+    top: 24px !important;
+    background: rgba(255, 255, 255, 0.78) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+    border-radius: 9999px !important;
+    padding: 8px 24px !important;
+    max-width: 90vw !important;
+    width: auto !important;
+}
+
+.navbar .nav-item,
+.navbar .nav-dropdown-btn span,
+.navbar .nav-brand-highlight {
+    color: #111111 !important;
+    font-weight: 500 !important;
+}
+
+.navbar .dropdown-chevron-icon {
+    color: #111111 !important;
+}
+
+/* Reference Hero Section */
+.hero-reference-section {
+    position: relative !important;
+    min-height: 100vh !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 120px 20px 60px 20px !important;
+    background: radial-gradient(circle at 50% 35%, rgba(200, 180, 150, 0.25) 0%, rgba(243, 235, 221, 0.95) 70%) !important;
+    background-color: #F3EBDD !important;
+    overflow: hidden !important;
+}
+
+.hero-ref-container {
+    max-width: 1100px !important;
+    margin: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 2 !important;
+}
+
+.hero-ref-headline {
+    font-family: var(--font-display, var(--font-heading)), -apple-system, sans-serif !important;
+    font-size: clamp(2.8rem, 5.8vw, 5.4rem) !important;
+    font-weight: 800 !important;
+    color: #111111 !important;
+    line-height: 1.12 !important;
+    letter-spacing: -1px !important;
+    margin: 0 0 32px 0 !important;
+    max-width: 980px !important;
+}
+
+/* Yellow Highlight Accent */
+.hero-ref-highlight {
+    color: #F5A623 !important;
+}
+
+/* Rounded Pill CTA Button */
+.hero-ref-cta-wrap {
+    margin-top: 8px !important;
+}
+
+.hero-ref-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #FFFFFF !important;
+    color: #111111 !important;
+    font-family: var(--font-ui), sans-serif !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    padding: 14px 34px !important;
+    border-radius: 9999px !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    text-decoration: none !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.2s ease !important;
+}
+
+.hero-ref-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14) !important;
+    background: #FAFAFA !important;
+}
+
+/* Bottom Full-Width Yellow Strip Banner */
+.hero-ref-bottom-bar {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    background: #F5A623 !important;
+    color: #111111 !important;
+    font-family: var(--font-ui), sans-serif !important;
+    font-size: clamp(0.85rem, 1.2vw, 1rem) !important;
+    font-weight: 500 !important;
+    padding: 14px 20px !important;
+    text-align: center !important;
+    z-index: 3 !important;
+    letter-spacing: 0.2px !important;
+}
+
+.hero-ref-bottom-bar strong {
+    font-weight: 700 !important;
+}
+
+@media (max-width: 768px) {
+    .hero-reference-section {
+        padding: 100px 16px 70px 16px !important;
+    }
+    .hero-ref-headline {
+        font-size: clamp(2.2rem, 8vw, 3.2rem) !important;
+    }
+    .hero-ref-bottom-bar {
+        font-size: 0.8rem !important;
+        padding: 10px 14px !important;
+    }
+}
+
+/* ==========================================================================
+   MINIMALIST PITCH-BLACK FOOTER (REFERENCE STYLE)
+   ========================================================================== */
+
+.ref-footer {
+    background-color: #000000 !important;
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    padding: 90px 0 36px 0 !important;
+    width: 100% !important;
+    position: relative !important;
+    z-index: 10 !important;
+    border: none !important;
+    font-family: var(--font-ui), -apple-system, sans-serif !important;
+}
+
+.ref-footer-container {
+    max-width: 1360px !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Top Row */
+.ref-footer-top {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 40px !important;
+    flex-wrap: wrap !important;
+    gap: 24px !important;
+}
+
+.ref-footer-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+}
+
+.ref-footer-logo-wave {
+    width: 38px !important;
+    height: 24px !important;
+}
+
+.ref-footer-brand-title {
+    display: flex !important;
+    flex-direction: column !important;
+    line-height: 1 !important;
+}
+
+.ref-footer-brand-title .brand-subtext {
+    font-family: var(--font-mono), monospace !important;
+    font-size: 0.68rem !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+    text-transform: lowercase !important;
+    margin-bottom: 2px !important;
+}
+
+.ref-footer-brand-title .brand-maintext {
+    font-family: var(--font-heading), sans-serif !important;
+    font-size: 1.55rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 1.5px !important;
+    color: #FFFFFF !important;
+}
+
+.ref-footer-heading {
+    font-family: var(--font-display, var(--font-heading)), sans-serif !important;
+    font-size: clamp(2.2rem, 4vw, 3.8rem) !important;
+    font-weight: 800 !important;
+    color: #FFFFFF !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+    letter-spacing: -0.5px !important;
+}
+
+/* Hairline Divider */
+.ref-footer-divider {
+    width: 100% !important;
+    height: 1px !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    margin-bottom: 60px !important;
+}
+
+/* Middle 4-Column Grid */
+.ref-footer-grid {
+    display: grid !important;
+    grid-template-columns: 1.3fr 1fr 1.25fr 1fr !important;
+    gap: clamp(30px, 4vw, 60px) !important;
+    margin-bottom: 80px !important;
+}
+
+.ref-footer-col {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.ref-col-label {
+    font-family: var(--font-mono), monospace !important;
+    font-size: 0.72rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 1.4px !important;
+    text-transform: uppercase !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+    margin-bottom: 24px !important;
+}
+
+.ref-col-links {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+}
+
+.ref-col-links li a {
+    color: #FFFFFF !important;
+    font-family: var(--font-ui), sans-serif !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    letter-spacing: 0.3px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    transition: color 0.2s ease, transform 0.2s ease !important;
+}
+
+.ref-col-links li a:hover {
+    color: #F5A623 !important;
+    transform: translateX(2px) !important;
+}
+
+.ext-arrow {
+    font-size: 0.82rem !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Social Circular Button (like Instagram button in reference) */
+.ref-social-icons {
+    display: flex !important;
+    gap: 12px !important;
+}
+
+.ref-circle-btn {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    background: transparent !important;
+    color: #FFFFFF !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    transition: all 0.22s ease !important;
+}
+
+.ref-circle-btn svg {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.ref-circle-btn:hover {
+    border-color: #FFFFFF !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    transform: scale(1.08) !important;
+}
+
+/* Bottom Bar */
+.ref-footer-bottom {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    font-size: 0.82rem !important;
+    color: rgba(255, 255, 255, 0.45) !important;
+    padding-top: 24px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+}
+
+.ref-copy {
+    font-size: 0.82rem !important;
+    color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.ref-center-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+}
+
+.ref-action-pill {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+}
+
+.ref-action-pill svg {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.ref-action-pill:hover {
+    border-color: #FFFFFF !important;
+    color: #FFFFFF !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    transform: translateY(-2px) !important;
+}
+
+.ref-legal-links {
+    display: flex !important;
+    gap: 20px !important;
+}
+
+.ref-legal-links a {
+    color: rgba(255, 255, 255, 0.45) !important;
+    text-decoration: none !important;
+    font-size: 0.82rem !important;
+    transition: color 0.2s ease !important;
+}
+
+.ref-legal-links a:hover {
+    color: #FFFFFF !important;
+}
+
+@media (max-width: 900px) {
+    .ref-footer-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 40px !important;
+    }
+    .ref-footer-top {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+    .ref-footer-bottom {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+}
+
+@media (max-width: 580px) {
+    .ref-footer-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
